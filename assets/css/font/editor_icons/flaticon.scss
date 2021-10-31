@@ -1,0 +1,109 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?21beb6db9a79587ac952a264f3d0df6e") format("truetype"),
+url("./flaticon.woff?21beb6db9a79587ac952a264f3d0df6e") format("woff"),
+url("./flaticon.woff2?21beb6db9a79587ac952a264f3d0df6e") format("woff2"),
+url("./flaticon.eot?21beb6db9a79587ac952a264f3d0df6e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?21beb6db9a79587ac952a264f3d0df6e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "smartphone": "\f101",
+    "tablet": "\f102",
+    "desktop-monitor": "\f103",
+    "left-turn-arrow": "\f104",
+    "undo-arrow": "\f105",
+    "redo-arrow": "\f106",
+    "redo": "\f107",
+    "redo-arrow-1": "\f108",
+    "clicker": "\f109",
+    "eye": "\f10a",
+    "up-arrow": "\f10b",
+    "up-arrows": "\f10c",
+    "download-arrow": "\f10d",
+    "copy-content": "\f10e",
+    "delete": "\f10f",
+    "block": "\f110",
+    "theme": "\f111",
+    "settings": "\f112",
+    "cancel": "\f113",
+    "align": "\f114",
+    "right-align": "\f115",
+);
+
+.flaticon-smartphone:before {
+    content: map-get($flaticon-map, "smartphone");
+}
+.flaticon-tablet:before {
+    content: map-get($flaticon-map, "tablet");
+}
+.flaticon-desktop-monitor:before {
+    content: map-get($flaticon-map, "desktop-monitor");
+}
+.flaticon-left-turn-arrow:before {
+    content: map-get($flaticon-map, "left-turn-arrow");
+}
+.flaticon-undo-arrow:before {
+    content: map-get($flaticon-map, "undo-arrow");
+}
+.flaticon-redo-arrow:before {
+    content: map-get($flaticon-map, "redo-arrow");
+}
+.flaticon-redo:before {
+    content: map-get($flaticon-map, "redo");
+}
+.flaticon-redo-arrow-1:before {
+    content: map-get($flaticon-map, "redo-arrow-1");
+}
+.flaticon-clicker:before {
+    content: map-get($flaticon-map, "clicker");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
+}
+.flaticon-up-arrow:before {
+    content: map-get($flaticon-map, "up-arrow");
+}
+.flaticon-up-arrows:before {
+    content: map-get($flaticon-map, "up-arrows");
+}
+.flaticon-download-arrow:before {
+    content: map-get($flaticon-map, "download-arrow");
+}
+.flaticon-copy-content:before {
+    content: map-get($flaticon-map, "copy-content");
+}
+.flaticon-delete:before {
+    content: map-get($flaticon-map, "delete");
+}
+.flaticon-block:before {
+    content: map-get($flaticon-map, "block");
+}
+.flaticon-theme:before {
+    content: map-get($flaticon-map, "theme");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-cancel:before {
+    content: map-get($flaticon-map, "cancel");
+}
+.flaticon-align:before {
+    content: map-get($flaticon-map, "align");
+}
+.flaticon-right-align:before {
+    content: map-get($flaticon-map, "right-align");
+}

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?21beb6db9a79587ac952a264f3d0df6e") format("truetype"),
+url("./flaticon.woff?21beb6db9a79587ac952a264f3d0df6e") format("woff"),
+url("./flaticon.woff2?21beb6db9a79587ac952a264f3d0df6e") format("woff2"),
+url("./flaticon.eot?21beb6db9a79587ac952a264f3d0df6e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?21beb6db9a79587ac952a264f3d0df6e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-smartphone:before {
+    content: "\f101";
+}
+.flaticon-tablet:before {
+    content: "\f102";
+}
+.flaticon-desktop-monitor:before {
+    content: "\f103";
+}
+.flaticon-left-turn-arrow:before {
+    content: "\f104";
+}
+.flaticon-undo-arrow:before {
+    content: "\f105";
+}
+.flaticon-redo-arrow:before {
+    content: "\f106";
+}
+.flaticon-redo:before {
+    content: "\f107";
+}
+.flaticon-redo-arrow-1:before {
+    content: "\f108";
+}
+.flaticon-clicker:before {
+    content: "\f109";
+}
+.flaticon-eye:before {
+    content: "\f10a";
+}
+.flaticon-up-arrow:before {
+    content: "\f10b";
+}
+.flaticon-up-arrows:before {
+    content: "\f10c";
+}
+.flaticon-download-arrow:before {
+    content: "\f10d";
+}
+.flaticon-copy-content:before {
+    content: "\f10e";
+}
+.flaticon-delete:before {
+    content: "\f10f";
+}
+.flaticon-block:before {
+    content: "\f110";
+}
+.flaticon-theme:before {
+    content: "\f111";
+}
+.flaticon-settings:before {
+    content: "\f112";
+}
+.flaticon-cancel:before {
+    content: "\f113";
+}
+.flaticon-align:before {
+    content: "\f114";
+}
+.flaticon-right-align:before {
+    content: "\f115";
+}

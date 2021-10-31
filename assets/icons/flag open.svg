@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="325" height="30" viewBox="0 0 325 30">
+  <g id="flag_open" data-name="flag open" transform="translate(-466 -527)">
+    <text id="open" transform="translate(508 548)" fill="#66329e" font-size="17" font-family="Metropolis-Medium, Metropolis" font-weight="500"><tspan x="0" y="0">Open</tspan></text>
+    <text id="_15_minutes_ago_with_25_bid" data-name="15 minutes ago with 25 bid" transform="translate(565 548)" fill="#ad94cd" font-size="17" font-family="Metropolis-Medium, Metropolis" font-weight="500"><tspan x="0" y="0">15 Minutes Ago With 25 Bid</tspan></text>
+    <g id="Group_2232" data-name="Group 2232" transform="translate(-43 39)">
+      <path id="flag_1" d="M398,546h-3a2,2,0,0,0-2-2h-4a1.944,1.944,0,0,1-2,0h-1a2,2,0,0,0-2,2v12a2,2,0,0,0,2,2h1a2,2,0,0,0,2-2v-4h2a2,2,0,0,0,2,2h5a2,2,0,0,0,2-2v-6A2,2,0,0,0,398,546Zm-11,12h-1V546h1Zm11-7v3h-5v-2h-4v-6h4v2h5Z" transform="translate(132 -49)" fill="#66329e" fill-rule="evenodd"/>
+      <g id="Rectangle_1931" data-name="Rectangle 1931" transform="translate(509 488)" fill="none" stroke="#efaf4c" stroke-width="2">
+        <rect width="30" height="30" rx="10" stroke="none"/>
+        <rect x="1" y="1" width="28" height="28" rx="9" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

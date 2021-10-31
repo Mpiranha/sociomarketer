@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="pin_this" data-name="pin this" transform="translate(-1716 -438)">
+    <g id="Rectangle_1930" data-name="Rectangle 1930" transform="translate(1716 438)" fill="none" stroke="#efaf4c" stroke-width="2">
+      <rect width="30" height="30" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="28" height="28" rx="9" fill="none"/>
+    </g>
+    <g id="Group_2235" data-name="Group 2235" transform="translate(1721 443)">
+      <path id="pin" d="M627.67,327.94l-7.5-7.5a1.25,1.25,0,1,0-1.769,1.768l.139.138-7.823,4.888-.547-.546a1.25,1.25,0,1,0-1.769,1.768l1.249,1.249,3.49,3.49-4.74,4.74a1.25,1.25,0,1,0,1.769,1.766l4.741-4.739,3.49,3.489,1.249,1.256a1.25,1.25,0,1,0,1.769-1.766l-.547-.548,4.889-7.821.139.138a1.252,1.252,0,1,0,1.768-1.773Zm-8.609,7.636-6.523-6.525,7.822-4.888,3.593,3.592Z" transform="translate(-608.038 -320.076)" fill="#66329e" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

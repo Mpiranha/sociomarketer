@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <filter id="Rectangle_119" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.412"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="delete_3" data-name="delete 3" transform="translate(-1406 -973)">
+    <g id="Group_778" data-name="Group 778" transform="translate(-63 739)">
+      <g transform="matrix(1, 0, 0, 1, 1469, 234)" filter="url(#Rectangle_119)">
+        <rect id="Rectangle_119-2" data-name="Rectangle 119" width="42" height="42" rx="12" transform="translate(9 6)" fill="#ad94cd"/>
+      </g>
+      <path id="delete_2" d="M83.905,547.981H78.6v-1.327A2.654,2.654,0,0,0,75.943,544H73.289a2.654,2.654,0,0,0-2.654,2.654v1.327H65.327a1.327,1.327,0,0,0,0,2.654h1.327v11.943a2.654,2.654,0,0,0,2.654,2.654H79.924a2.654,2.654,0,0,0,2.654-2.654V550.635h1.327a1.327,1.327,0,0,0,0-2.654Zm-10.616-1.327h2.654v1.327H73.289Zm6.635,15.924H69.308V550.635H79.924Z" transform="translate(1424 -294)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

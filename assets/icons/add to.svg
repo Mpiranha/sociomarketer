@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="add_to" data-name="add to" transform="translate(-697 -525)">
+    <path id="mini_plus" d="M46.157,743.959H42.438V740.24a1.24,1.24,0,0,0-2.479,0v3.719H36.24a1.24,1.24,0,0,0,0,2.479h3.719v3.719a1.24,1.24,0,1,0,2.479,0v-3.719h3.719a1.24,1.24,0,0,0,0-2.479Z" transform="translate(671 -205)" fill="#fff" fill-rule="evenodd"/>
+    <g id="Rectangle_1924" data-name="Rectangle 1924" transform="translate(697 525)" fill="none" stroke="#efaf4c" stroke-width="2">
+      <rect width="30" height="30" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="28" height="28" rx="9" fill="none"/>
+    </g>
+  </g>
+</svg>
