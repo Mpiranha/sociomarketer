@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="watch_letter" data-name="watch letter" transform="translate(-559 -1157)">
+    <path id="time_1" d="M73.354,256a9.354,9.354,0,1,0,9.354,9.354A9.354,9.354,0,0,0,73.354,256Zm0,16.37a7.016,7.016,0,1,1,7.016-7.016A7.016,7.016,0,0,1,73.354,272.37Zm3.508-8.185H74.524v-2.339a1.169,1.169,0,0,0-2.339,0v3.508a1.169,1.169,0,0,0,1.169,1.169h3.508a1.169,1.169,0,0,0,0-2.339Z" transform="translate(500.646 906.646)" fill="#fff" fill-rule="evenodd"/>
+    <g id="Rectangle_1924" data-name="Rectangle 1924" transform="translate(559 1157)" fill="none" stroke="#efaf4c" stroke-width="2">
+      <rect width="30" height="30" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="28" height="28" rx="9" fill="none"/>
+    </g>
+  </g>
+</svg>
