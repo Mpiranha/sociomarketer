@@ -353,17 +353,26 @@
     position: absolute;
     left: 10px;
     padding: 0 0.4rem;
+    display: none;
 }
 
-.workspace-box .nav {
+.workspace-box.default .default-text {
+    display: block;
+}
+
+.workspace-box:hover .default-text {
+    display: block;
+}
+
+.workspace-actions {
     position: absolute;
     right: 10px;
     top: 10px;
+    display: none;
 }
 
 
-
-.workspace-box .workspace-actions .nav-link {
+.workspace-actions .nav-link {
     padding: 0;
     background-color: #fff;
     display: flex;
@@ -375,8 +384,13 @@
     width: 1.2rem;
 }
 
-.workspace-box .workspace-actions .nav-link img {
+.workspace-actions .nav-link img {
     width: 0.7rem;
+}
+
+.workspace-box:hover .workspace-actions,
+.team-member-box:hover .workspace-actions {
+    display: flex;
 }
 
 .nav-tab-wrap .nav-link {
@@ -469,6 +483,7 @@
 }
 
 .team-member-box {
+    position: relative;
     background: linear-gradient(to right, #9b6dff, #ad94cd);
     height: 200px;
     max-width: 180px;
@@ -676,7 +691,8 @@
     width: 0.9rem;
 }
 
-.table-socio tr th, .table-socio tr td {
+.table-socio tr th,
+.table-socio tr td {
     border: none;
 }
 
@@ -728,4 +744,367 @@
 .bg-remove-result {
     margin: 0 auto;
     width: 300px;
+}
+
+.btn-add-member {
+    background-color: #66329e;
+    color: #fff;
+    padding: 0.2rem 1.7rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+
+.team-member-box .member-role {
+    background-color: #66329e;
+    color: #fff;
+    font-size: 0.6rem;
+    padding: 0 0.4rem;
+}
+
+.social-box {
+    height: 120px;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-box.main {
+    background: linear-gradient(to right, #9b6dff, #ad94cd);
+
+}
+
+.social-box.create {
+    background-color: #66329e !important;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pills-social .title {
+    color: #66329e;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.social-box.create .create-text {
+    color: #fff;
+    font-size: 0.85rem;
+
+
+    line-height: 1.1rem;
+}
+
+.social-box.main .img-wrap {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 0.6rem;
+}
+
+.social-img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.social-box.main .img-wrap .social-icon {
+    width: 0.9rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.social-box.main .social-name {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.social-box.main .social-type {
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.social-icon-display {
+    display: flex;
+}
+
+
+.social-icon-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon-side:first-child {
+    margin-right: 0.8rem;
+}
+
+.social-icon-side img {
+    width: 1.3rem;
+}
+
+.social-icon-side img:first-child {
+    margin-bottom: 0.3rem;
+}
+
+.social-box.main .workspace-actions {
+    display: flex;
+    bottom: 30px;
+    right: 25px;
+    top: initial;
+}
+
+.workspace-actions .nav-text {
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+    text-decoration: none;
+    color: #70ffc1;
+}
+
+.tooltip>.tooltip-inner {
+    background-color: #66329e;
+    font-size: 0.8rem;
+}
+
+.tooltip>.arrow::before {
+    border-bottom-color: #66329e !important;
+}
+
+.link-shorter-box {
+    background: linear-gradient(to right, #9b6dff, #ad94cd);
+    min-height: 200px;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+.link-shorter-box .title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.custom-check-label {
+    display: flex;
+    position: relative;
+}
+
+.custom-check-label input {
+    opacity: 0;
+}
+
+.custom-check-label .check-mark {
+    border: 3px solid #66329e;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.custom-check-label .check-mark::before {
+    content: "";
+    background-color: #66329e;
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: none;
+}
+
+.custom-check-label input:checked ~ .check-mark::before {
+    display: block;
+}
+
+.custom-check-label .label label {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.custom-check-label .label .desc {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.border-wrap {
+    border-top: 2px solid #b99fe4;
+    border-bottom: 2px solid #b99fe4;
+    min-height: 70px;
+    padding: 0.7rem 0;
+}
+
+.border-wrap:nth-child(odd) {
+    border-top: none;
+}
+
+.btn-connect {
+    background-color: #66329e;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+}
+
+.default-link {
+    font-size: 0.7rem !important;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.default-link .check-mark {
+    width: 14px;
+    height: 14px;
+}
+
+.default-link .check-mark::before {
+    width: 4px;
+    height: 4px;
+}
+
+.default-link .label label {
+    font-size: 0.6rem;
+}
+
+.link-input {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    max-width: 350px;
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+.link-input::placeholder {
+    color: #eadada;
+}
+
+
+.link-input:focus {
+    background-color: transparent;
+    color: #fff;
+}
+
+.link-shorter-box label {
+    color: #fff;
+    font-size: 0.9rem;
+
+}
+
+.link-shorter-box .form-group {
+    margin-bottom: 1.9rem;
+}
+
+.result-desc-text {
+    color: #66329e;
+    font-size: 0.9rem;
+}
+
+.page-item.active .page-link {
+    border: 2px solid #f3c278;
+    background-color: #fff;
+    color: #66329e;
+}
+
+.page-item {
+    margin-right: 0.5rem;
+}
+
+.page-link {
+    font-size: 0.85rem;
+    color: #66329e !important;
+    border: none;
+    padding: 0.15rem 0.45rem;
+    border-radius: 0.6rem;
+}
+
+.market-item-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.market-item {
+    border-top: 2px solid #d3ddea;
+    padding: 0.4rem 0.8rem;
+    display: flex;
+}
+
+.market-item:last-child {
+    border-bottom: 2px solid #d3ddea;
+}
+
+.market-item .market-title {
+    color: #66329e;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+
+}
+
+.market-item .market-desc {
+    color: #66329e;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.geo-info .geo-item {
+    display: flex;
+    align-items: center;
+    margin-right: 0.9rem;
+}
+
+.geo-item .text {
+    color: #66329e;
+    font-size: 0.8rem;
+}
+
+
+
+.geo-item .market-state {
+    color: #b1b1b1;
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+}
+
+
+.market-item .market-icon {
+    width: 1.3rem;
+    margin-right: 0.4rem;
+}
+
+.market-item .secondary-content {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.market-item .geo-info {
+    display: flex;
+}
+
+.market-item .pin-market {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.pin-market .text {
+    color: #66329e;
+    font-size: 0.75rem;
+}
+
+.market-price {
+    color: #66329e;
+    font-size: 1.2rem;
+}
+
+.market-interval {
+    color: #66329e;
+    font-size: 0.8rem;
 }
