@@ -885,6 +885,7 @@
     color: #fff;
     margin-bottom: 1rem;
 }
+
 .custom-check-label {
     display: flex;
     position: relative;
@@ -917,7 +918,7 @@
     display: none;
 }
 
-.custom-check-label input:checked ~ .check-mark::before {
+.custom-check-label input:checked~.check-mark::before {
     display: block;
 }
 
@@ -1107,4 +1108,68 @@
 .market-interval {
     color: #66329e;
     font-size: 0.8rem;
+}
+
+.integration-box {
+    background: linear-gradient(to right, #9b6dff, #ad94cd);
+    height: 170px;
+    border-radius: 0.8rem;
+    display: flex;
+    padding: 1.3rem;
+}
+
+.integration-box .icon-social {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 1.4rem;
+}
+
+.integration-box .integration-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.integration-box .integration-content .content {
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+.integration-box .actions {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+
+.btn-integrate {
+    background-color: #ad94cd;
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.7rem;
+    border-radius: 1rem;
+}
+
+.integration-box .add-icon {
+    width: 1.5rem;
+    margin-left: auto;
+}
+
+.training-video {
+    border: 2px solid #f3c278;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0.3rem 2rem;
+    border-radius: 0.8rem;
+    max-width: 450px;
+    margin-bottom: 3.5rem;
+}
+
+.training-video iframe {
+    height: 170px;
+    margin-bottom: 0.5rem;
+}
+
+.training-video .title {
+    color: #66329e;
+
+    font-size: 0.9rem;
 }
