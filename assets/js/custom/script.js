@@ -33,6 +33,9 @@ $(function () {
         var audioFile = $(this).siblings(".audio-file");
         const currentTimeContainer = $(this).siblings().find('.current-time');
         let raf = null;
+        let progress = $(this).siblings().find('#progress').get(0);
+        let progressBar = $(this).siblings().find('#progress-bar').get(0);
+
 
 
 
@@ -50,16 +53,45 @@ $(function () {
                 audioFile.trigger('pause');
             }
         });
-
+        if (progress) {
+            var supportsProgress = (document.createElement('progress').max !== undefined);
+            if (!supportsProgress) progress.setAttribute('data-state', 'fake');
+        }
         if (audioFile.get(0).readyState > 2) {
-
+            if (progress)
+                progress.setAttribute('max', audioFile.get(0).duration);
             // displayBufferedAmount();
         } else {
             audioFile.get(0).addEventListener('loadedmetadata', () => {
-
-                // displayBufferedAmount();
+                if (progress)
+                    // displayBufferedAmount();
+                    progress.setAttribute('max', audioFile.get(0).duration);
             });
         }
+
+        if (progress) {
+            audioFile.get(0).addEventListener('timeupdate', function () {
+                // For mobile browsers, ensure that the progress element's max attribute is set
+                if (!progress.getAttribute('max')) progress.setAttribute('max', video.duration);
+                progress.value = audioFile.get(0).currentTime;
+                progressBar.style.width = Math.floor((audioFile.get(0).currentTime / audioFile.get(0).duration) * 100) + '%';
+            });
+
+            progress.addEventListener('click', function (e) {
+                // var pos = (e.pageX - (this.offsetLeft + this.offsetParent.offsetLeft)) / this.offsetWidth;
+                // video.currentTime = pos * video.duration;
+                var pos = e.offsetX;
+                audioFile.get(0).currentTime = pos * audioFile.get(0).duration / this.offsetWidth;
+                currentTimeContainer.textContent = calculateTime(Math.floor(audioFile.get(0).currentTime));
+                // console.log(pos);
+            }, false);
+        }
+
+        // audioFile.get(0).addEventListener('loadedmetadata', function () {
+
+        //     progress.setAttribute('max', audioFile.get(0).duration);
+        // });
+
 
         const whilePlaying = () => {
             currentTimeContainer.get(0).textContent = calculateTime(Math.floor(audioFile.get(0).currentTime));
@@ -77,6 +109,7 @@ $(function () {
             raf = requestAnimationFrame(whilePlaying);
         }
 
+
     })
 
 
@@ -86,7 +119,7 @@ $(function () {
 
     videoContainer.each(function () {
         let container = $(this).get(0);
-      
+
 
         let video = $(this).find('.stock-video').get(0);
 
@@ -249,6 +282,10 @@ $(function () {
         }
     });
 
+
+    $(".workspace-prev").on('click', function () {
+        $(".workspace-drop-down").toggleClass("show");
+    });
 
 
 

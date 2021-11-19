@@ -11,16 +11,7 @@
     <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css' rel='stylesheet'>
     <link rel="stylesheet" href="../assets/css/main.css">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                themeSystem: 'bootstrap'
-            });
-            calendar.render();
-        });
-    </script>
+
 </head>
 
 <body>
@@ -74,7 +65,7 @@
                     <nav class="nav nav-media flex-column">
                         <a class="nav-link" href="free-music.html">Free Music</a>
                         <a class="nav-link" href="stock-image.html">Stock Image</a>
-                        <a class="nav-link" href="#">Text To Speech</a>
+                        <a class="nav-link" href="text-speech.html">Text To Speech</a>
                         <a class="nav-link" href="stock-video.html">Stock Video</a>
                     </nav>
                 </li>
@@ -141,14 +132,62 @@
                     <a class="nav-link" href="#">Draft</a>
                 </nav>
                 <nav class="nav nav-secondary">
-                    <a class="nav-link" href="#">
+                    <div class="nav-link nav-workspace" href="#">
                         <div class="workspace-prev">
                             <img class="workspace-logo" src="../assets/images/me.jpeg" alt="Workspace Logo">
                             <div class="workspace-details">
                                 Business Profile
                             </div>
                         </div>
-                    </a>
+                        <div class="workspace-drop-down">
+                            <div class="workspace-drop-inner">
+                                <div class="custom-search">
+                                    <button class="btn no-shadow">
+                                        <img src="../assets/icons/search.svg" alt="">
+                                    </button>
+                                    <input id="my-input" placeholder="Search" class="form-control no-shadow" type="text"
+                                        name="">
+                                </div>
+
+                                <div class="workspace-list">
+                                    <div class="workspace-list-item active">
+                                        <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                        <span class="text">
+                                            Oyibo Market
+                                        </span>
+                                    </div>
+                                    <div class="workspace-list-item">
+                                        <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                        <span class="text">
+                                            Oyibo Market
+                                        </span>
+                                    </div>
+                                    <div class="workspace-list-item">
+                                        <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                        <span class="text">
+                                            Oyibo Market
+                                        </span>
+                                    </div>
+                                </div>
+                                <nav class="nav workspace-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <img src="../assets/icons/add 2.svg" alt="">
+                                            Add New
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <img src="../assets/icons/create campaign.svg" alt="">
+                                            View All
+                                        </a>
+                                    </li>
+
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
                     <a class="nav-link" href="#">
                         <img class="nofification-icon" src="../assets/icons/notification bell.svg"
                             alt="notification bell">
@@ -196,6 +235,8 @@
     <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/js/popper/popper.min.js"></script>
     <script src="../assets/js/custom/script.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="../assets/js/custom/calendar.js"></script>
 </body>
 
 </html>
