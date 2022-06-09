@@ -1988,11 +1988,15 @@ path {
 
 .btn-soc-media-add {
     background-color: #ccd4dc;
-    color: #273d5b;
+    color: #66329e;
     font-weight: bold;
     font-size: 0.8rem;
     padding: 0.35rem 1.1rem;
     border-radius: 1rem;
+}
+
+.btn-soc-media-add.loading {
+    padding: 0.05rem 1rem;
 }
 
 .btn-soc-media-add.complete {
@@ -2027,7 +2031,7 @@ path {
 
 .btn-try-again {
     background-color: #ced5dd;
-    color: #294063;
+    color: #66329e;
     font-weight: bold;
     font-size: 0.8rem;
     padding: 0.55rem 1.1rem;
@@ -2035,9 +2039,9 @@ path {
 }
 
 .btn-soc-done {
-    background-color: #f4a833;
+    background-color: #efaf4c;
     padding: 0.55rem 1.1rem;
-    color: #294063;
+    color: #66329e;
     font-weight: bold;
     font-size: 0.8rem;
 }
@@ -2063,19 +2067,19 @@ path {
 }
 .ldio-ey6fe0nc3jn div { position: absolute; width: 15px }.ldio-ey6fe0nc3jn div:nth-child(1) {
   left: 17.5px;
-  background: #1d3f72;
+  background: #66329e;
   animation: ldio-ey6fe0nc3jn-1 0.8695652173913042s cubic-bezier(0,0.5,0.5,1) infinite;
   animation-delay: -0.17391304347826086s
 }
 .ldio-ey6fe0nc3jn div:nth-child(2) {
   left: 42.5px;
-  background: #5699d2;
+  background: #9766cd;
   animation: ldio-ey6fe0nc3jn-2 0.8695652173913042s cubic-bezier(0,0.5,0.5,1) infinite;
   animation-delay: -0.08695652173913043s
 }
 .ldio-ey6fe0nc3jn div:nth-child(3) {
   left: 67.5px;
-  background: #d8ebf9;
+  background: #cbb5e3;
   animation: ldio-ey6fe0nc3jn-3 0.8695652173913042s cubic-bezier(0,0.5,0.5,1) infinite;
   animation-delay: undefineds
 }
