@@ -288,6 +288,31 @@ $(function () {
     });
 
 
+    $(".btn-toggle-pwd-vis").each(function () {
+        $(this).on("click", function (e) {
+            e.preventDefault();
+            let target = $("" + $(this).attr("data-target") + "");
+            let visibleUrl = "../assets/images/visibility-visible.svg";
+            let inVisibleUrl = "../assets/images/visibility.svg";
+            let icon = $(this).children("img");
+
+            console.log(target);
+
+            console.log(target.attr("type"));
+
+            if (target.attr("type") === "password") {
+                target.attr("type", "text");
+                icon.attr("src", inVisibleUrl);
+            } else {
+                target.attr("type", "password");
+                icon.attr("src", visibleUrl);
+            }
+        });
+    });
+
+
+
+
 
 
 })
