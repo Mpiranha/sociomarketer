@@ -2466,6 +2466,28 @@ path {
     color: #efaf4c;
 }
 
+.reseller-link {
+    background-color: #dc3545;
+    color: #fff;
+    margin-right: 2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+.reseller-link:hover {
+    background-color: #fff;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+.reseller-link img {
+    width: 1.5rem;
+    margin-right: 0.8rem;
+}
+
 
 @keyframes ldio-ey6fe0nc3jn-1 {
     0% {
