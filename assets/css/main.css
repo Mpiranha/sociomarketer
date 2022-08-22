@@ -2205,6 +2205,7 @@ path {
     right: 10px;
     top: 10px;
     padding: 0;
+    transform: rotateZ(45deg);
 }
 
 .btn-close-modal img {
