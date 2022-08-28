@@ -249,8 +249,8 @@
 
                             <div class="col-lg-4 col-12">
                                 <div class="serach-form-custom">
-                                    <input type="text" class="form-control"
-                                        onkeyup="get_types_value('1')" id="searh_value" placeholder="Search">
+                                    <input type="text" class="form-control" onkeyup="get_types_value('1')"
+                                        id="searh_value" placeholder="Search">
                                     <i class="flaticon-search icons"></i>
                                 </div>
                             </div>
@@ -386,7 +386,117 @@
         </div>
     </div>
 
-   
+
+    <div class="modal fade" id="staticBackdrop1" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" id="cut1" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body pt-0">
+                    <h5 class="text-center mb-5">Good Job, Now Let`s Name This Campaign</h5>
+
+                    <div class="form-group">
+                        <input id="new_profile_name" value="" data-required="1" type="text"
+                            placeholder="Email Campaign Name" class="form-control validate wlanswer-field">
+                        <!--<span class="px-2"> </span>-->
+                        <!--<span class="px-2" ><i class="fa fa-circle text-danger" style="font-size:7px!important; padding: 0px 10px 0 0;"></i>No one Sees this, except you </span>-->
+                        <span class="" id="profile_alt"><span class="text-danger mb-2">Please Enter Campaign Name</span>
+                        </span>
+                    </div>
+
+                    <div class="form-group" id="sub_cat_details_section" style="display:none">
+                        <select class="form-control" id="sub_cat_details"></select>
+                        <span class="" id="sub_cat_alt"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="cars" id="campaign_length" class="form-control">
+                            <option value="0">How many days should the campaign run?</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                        <span class="" id="cat_length_alt"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <select required="" id="number-of-campaign-per-day" class="form-control">
+                            <option value="0">How many posts do you want per day?</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <span class="" id="post_per-day_alt"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <select required="" id="language" class="form-control">
+                            <option value="0">Select Output Language</option>
+                            <option value="1">English(US)</option>
+                            <option value="2">German</option>
+                            <option value="3">French</option>
+                            <option value="4">Russian</option>
+                            <option value="5">Spanish</option>
+                            <option value="6">Portuguese</option>
+                            <option value="7">Japanese</option>
+                            <option value="8">Czech</option>
+                            <option value="9">Chinese</option>
+                            <option value="10">Arabic</option>
+                            <option value="11">Italian</option>
+                            <option value="12">Korean</option>
+                            <option value="13">Malay</option>
+                        </select>
+                        <span class="" id="post_per-day_alt"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="date" id="camapign_date_time" value="2022-08-22" name="camapign_date_time"
+                            class="form-control" min="2022-08-22T19:08">
+                        <span class="" id="date_time_alt"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-9 d-flex mx-auto">
+                            <button type="button" class="btn btn-outline-primary btn-block mr-2"
+                                onclick="chnage_dfy1('2')">Go Back</button>
+                            <button type="button" class="btn btn-primary btn-block mt-0"
+                                onclick="next('2')">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
