@@ -207,9 +207,11 @@ html {
 .profile-dropdown-menu {
     border-radius: 1rem;
     margin: 0.625rem 0 0;
-    padding: 1.5rem 0;
+    padding: 0;
     box-shadow: 1px 1px 6px #504d4d6b;
+    min-width: 14rem;
 }
+
 
 .profile-dropdown-menu .dropdown-item {
     font-size: 1rem;
@@ -224,6 +226,33 @@ html {
     margin: 0 1.5rem;
     border-radius: 1.5rem;
     padding: 0.15rem 1.5rem;
+}
+
+.dropdown-relative-inner {
+    position: relative;
+    padding: 1.5rem 0;
+}
+
+.dropdown-relative-inner::before {
+    content: "";
+    position: absolute;
+    height: 98.5%;
+    width: 7px;
+    background-color: var(--color-primary);
+    top: 5px;
+    left: 0px;
+    border-top-left-radius: 0.9rem;
+    border-bottom-left-radius: 0.9rem;
+}
+
+.dropdown-relative-inner::after {
+    content: "";
+    position: absolute;
+    border-color: transparent transparent #e5dcdc transparent;
+    border-width: 11px;
+    border-style: solid;
+    top: -22px;
+    right: 19px;
 }
 
 .btn-logout {
@@ -2294,8 +2323,8 @@ path {
 .btn-upgrade {
     background-color: #66329e;
     color: #fff;
-    font-size: 1.5rem;
-    padding: 0.6rem 2.5rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
     border: 3px solid #66329e;
     transition: all 0.5s;
 }
@@ -2353,14 +2382,14 @@ path {
     display: flex;
     align-items: center;
     border: 2px solid #efaf4c;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.7rem;
     border-radius: 1.5rem;
     margin-bottom: 2.5rem;
 }
 
 .post-wrap .post-image {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 180px;
     margin-right: 1.2rem;
     border-radius: 0.8rem;
 }
@@ -2376,13 +2405,12 @@ path {
 }
 
 .post-wrap .post-body .content {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
 .post-wrap .post-body .posted-time {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #a2a2a2;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -2395,7 +2423,7 @@ path {
 
 .post-foot .campaign-name {
     color: #a34eff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     border: 2px solid #efaf4c;
     padding: 0.2rem 0.7rem;
@@ -2411,7 +2439,7 @@ path {
 .post-foot .post-actions .btn-edit-post {
     background-color: var(--color-primary);
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.9px;
     padding: 0.35rem 0.75rem;
@@ -2478,6 +2506,20 @@ path {
     transition: all 0.5s;
 }
 
+.back-link-workspace {
+    background-color: var(--color-primary);
+    color: #fff;
+    margin-right: 2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.back-link-workspace:hover {
+    color: #fff;
+}
+
 .reseller-link:hover {
     background-color: #fff;
     color: #dc3545;
@@ -2502,7 +2544,8 @@ path {
     font-weight: 500;
 }
 
-.input-card-details::placeholder, .card-number::placeholder {
+.input-card-details::placeholder,
+.card-number::placeholder {
     color: var(--color-primary);
     font-weight: 500;
 }
@@ -2860,6 +2903,299 @@ path {
     align-items: center;
     padding: 2rem;
     justify-content: center;
+}
+
+.sc-analytic-select-soc-act .select-selected:after {
+    display: none;
+}
+
+/* The container must be positioned relative: */
+.ana-select {
+    position: relative;
+}
+
+.ana-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.ana-select-selected {
+    background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.ana-select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    display: none;
+
+}
+
+/* Point the arrow upwards when the select box is open (active):
+.ana-select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+} */
+
+/* style the items (options), including the selected item: */
+.ana-select-items div,
+.ana-select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.ana-select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.ana-select-items div:hover,
+.ana-same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.reseller-stat {
+    background-color: #fff;
+    box-shadow: 1px 2px 7px #7a7474bd;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+}
+
+.reseller-stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.reseller-stat-item .stat-value {
+    background-color: #a34eff;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.2rem 0.9rem;
+    min-width: 66px;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.reseller-stat-item .stat-title {
+    color: #a34eff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.reseller-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.reseller-header .header-item:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.reseller-header .header-item {
+    color: #a34eff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.header-item .icon {
+    width: 0.9rem;
+    margin-right: .3rem;
+}
+
+.header-item .icons::before {
+    margin-right: .3rem;
+}
+
+.reseller-header .header-item.active {
+    background-color: #a34eff;
+    color: #fff;
+}
+
+.reseller-account-box {
+    background-color: #fff;
+    box-shadow: 1px 2px 7px #7a7474bd;
+    height: 250px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.reseller-account-box:hover {
+    box-shadow: 0px -3px 7px #7a7474bd;
+}
+
+.reseller-account-box .box-title {
+    color: #a34eff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+
+}
+
+.reseller-account-box .add-btn {
+    background-color: #a34eff;
+    height: 80px;
+    border-radius: 50%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reseller-account-box .add-btn .user-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.btn-reseller-action {
+    background-color: transparent;
+
+}
+
+.reseller-account-box .dropdown {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.reseller-account-box .profile-dropdown-menu .dropdown-relative-inner::before {
+    display: none;
+}
+
+.btn-reseller-action img {
+    width: 1.9rem;
+}
+
+.create-user-box {
+    cursor: pointer;
+}
+
+.modal-share-campaign label {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+select.input-card-details {
+    height: calc(3.25rem + 2px) !important;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.reseller-account-box .profile-dropdown-menu {
+    min-width: 13rem;
+}
+
+.reseller-account-box .profile-dropdown-menu .dropdown-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.reseller-account-box .profile-dropdown-menu .dropdown-item img {
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.reseller-account-box .dropdown-relative-inner {
+    padding: 1rem 0;
+}
+
+.card-select .btn-continue {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.45rem 1.5rem;
+    display: none;
+}
+
+.selectcard .btn-continue {
+    display: inline-block;
+}
+
+.serach-form-custom {
+    position: relative;
+}
+
+
+.serach-form-custom i::before {
+    position: absolute;
+    color: rgb(24, 23, 23);
+    font-size: 0.8rem;
+    top: 50%;
+    padding: 4px;
+    margin-left: 4px;
+    margin-top: -11px;
+    left: 5px;
+}
+
+.serach-form-custom input {
+    padding: 1.5rem 1.9rem;
+    border-radius: 0.4rem !important;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.custom_post_link {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.6rem;
+    transition: all 0.5s;
+    border: 1px solid #efaf4c;
+}
+
+.custom_post_link img {
+    width: 1rem;
+    margin-right: 0.3rem;
+    transition: all 0.5s;
+}
+
+.custom_post_link:hover {
+    color: #fff;
+    
+}
+
+.custom_post_link:hover img {
+    transform: rotateZ(45deg);
 }
 
 

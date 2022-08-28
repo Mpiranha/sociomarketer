@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Campaign</title>
+    <link rel="stylesheet" href="../assets/css/bootstap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/progress.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="../assets/css/main (2).css"> -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+
+    <div class="flex-col-wrap">
+        <div class="content-head">
+            <div class="content-head-title">
+                <img class="logo" src="../assets/images/Smartpostr.png" alt="logo">
+            </div>
+            <nav class="nav nav-top">
+                <a class="nav-link" href="#">Calendar</a>
+                <a class="nav-link" href="#">My Galery</a>
+                <a class="nav-link" href="#">Compose</a>
+                <a class="nav-link" href="#">My Post</a>
+                <a class="nav-link" href="#">Client Finder</a>
+            </nav>
+            <nav class="nav nav-secondary">
+                <div class="nav-link nav-workspace" href="#">
+                    <div class="workspace-prev">
+                        <img class="workspace-logo" src="../assets/images/tool-test-image.png" alt="Workspace Logo">
+                        <div class="workspace-prev-inner">
+                            <div class="workspace-head-text">
+                                WORKSPACE
+                            </div>
+                            <div class="workspace-details">
+                                Shop and Shop
+                            </div>
+                        </div>
+                        <img class="toggle-icon" src="../assets/images/toggle down.png" alt="toggle down icon">
+                    </div>
+                    <div class="workspace-drop-down">
+                        <div class="workspace-drop-inner">
+                            <div class="custom-search">
+                                <button class="btn no-shadow">
+                                    <img src="../assets/icons/search.svg" alt="">
+                                </button>
+                                <input id="my-input" placeholder="Search" class="form-control no-shadow" type="text"
+                                    name="">
+                            </div>
+
+                            <div class="workspace-list">
+                                <div class="workspace-list-item active">
+                                    <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                    <span class="text">
+                                        Oyibo Market
+                                    </span>
+                                </div>
+                                <div class="workspace-list-item">
+                                    <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                    <span class="text">
+                                        Oyibo Market
+                                    </span>
+                                </div>
+                                <div class="workspace-list-item">
+                                    <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                    <span class="text">
+                                        Oyibo Market
+                                    </span>
+                                </div>
+                            </div>
+                            <nav class="nav workspace-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="../assets/icons/add 2.svg" alt="">
+                                        Add New
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="../assets/icons/create campaign.svg" alt="">
+                                        View All
+                                    </a>
+                                </li>
+
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-link" href="#">
+                    <img class="nofification-icon" src="../assets/icons/notification bell.svg" alt="notification bell">
+                </a>
+                <div class="dropdown show">
+                    <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="user-icon" src="../assets/images/tool-test-image.png" alt="User Image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown-menu">
+                        <div class="dropdown-relative-inner">
+                            <a class="dropdown-item" href="#">My Plans</a>
+                            <a class="dropdown-item" href="#">Team Members</a>
+                            <a class="dropdown-item" href="#">Bonus and Resources</a>
+                            <a class="dropdown-item" href="#">Bilings</a>
+                            <a class="dropdown-item" href="#">Tutorial Videos</a>
+                            <a class="dropdown-item" href="#">Profile Settings</a>
+                            <button class="dropdown-item">
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn nav-link btn-logout" href="#">
+                    Help Center
+                </a>
+            </nav>
+        </div>
+        <div class="flex-wrapper">
+            <div class="sidebar">
+                <nav class="nav flex-column nav-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <img class="sidebar-icon" src="../assets/icons/dashboard.svg" alt="">
+                            <span class="nav-text">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pages/create-campaign.html">
+                            <img class="sidebar-icon" src="../assets/icons/create campaign.svg" alt="">
+                            <span class="nav-text">
+                                Create Campaign
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="saved-campaign.html">
+                            <img class="sidebar-icon" src="../assets/icons/view campaign.svg" alt="">
+                            <span class="nav-text">
+                                View Campaigns
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preset.html">
+                            <img class="sidebar-icon" src="../assets/icons/preset.svg" alt="">
+                            <span class="nav-text">
+                                Preset
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" role="button" href="#collapseExample">
+                            <img class="sidebar-icon" src="../assets/icons/media library.svg" alt="">
+                            <span class="nav-text">
+                                Media Library
+                            </span>
+                            <i class="flaticon-up-chevron icons collapse-icon"></i>
+                        </a>
+                    </li>
+                    <li class="collapse" id="collapseExample">
+                        <nav class="nav nav-media flex-column">
+                            <a class="nav-link" href="free-music.html">Free Music</a>
+                            <a class="nav-link" href="stock-image.html">Stock Image</a>
+                            <a class="nav-link" href="text-speech.html">Text To Speech</a>
+                            <a class="nav-link" href="stock-video.html">Stock Video</a>
+                        </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bg-removal.html">
+                            <img class="sidebar-icon" src="../assets/icons/background removal.svg" alt="">
+                            <span class="nav-text">
+                                BG Remover
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">
+                            <img class="sidebar-icon" src="../assets/icons/market.svg" alt="Market Icon">
+                            <span class="nav-text">
+                                Markets
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="integration.html">
+                            <img class="sidebar-icon" src="../assets/icons/intergrations.svg" alt="">
+                            <span class="nav-text">
+                                Integration
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analytics.html">
+                            <img class="sidebar-icon" src="../assets/icons/analytics.svg" alt="">
+                            <span class="nav-text">
+                                Analytics
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="training.html">
+                            <img class="sidebar-icon" src="../assets/icons/training.svg" alt="">
+                            <span class="nav-text">
+                                Training
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="settings.html">
+                            <img class="sidebar-icon" src="../assets/icons/settings.svg" alt="">
+                            <span class="nav-text">
+                                Settings
+                            </span>
+                        </a>
+                    </li>
+
+                </nav>
+
+            </div>
+            <section class="content">
+
+                <div class="content-body">
+                    <div class="container-fluid x-px-container">
+
+                        <h1 class="page-title">
+                            Create Campaign
+                        </h1>
+
+                        <div class="page-desc mb-1">
+                            Hello Mat, Welcome to Smartpostr
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+
+                                <h5 class="py-4 heading-sm">Select the type of campaign </h5>
+                                <div id="btn_sub_category" style="display:none"><button class="btn btn-primary mb-2"
+                                        onclick="back_to_sub_vategory('1')">Back</button></div>
+                            </div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+
+                            <div class="col-lg-4 col-12">
+                                <div class="serach-form-custom">
+                                    <input type="text" class="form-control"
+                                        onkeyup="get_types_value('1')" id="searh_value" placeholder="Search">
+                                    <i class="flaticon-search icons"></i>
+                                </div>
+                            </div>
+
+                            <div class="ml-lg-auto col-lg-4 col-12">
+                                <a class="custom_post_link float-md-right" href="custom-post.html">
+                                    <img src="../assets/images/add user.png" alt="add icon">
+                                    Custom Post
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="db-list-com tz-db-table p-0">
+                            <input type="hidden" value="21" id="old_value">
+                            <div class="row" id="get_emal_type2">
+                            </div>
+                            <div class="row" id="get_emal_type">
+                                <div class="col-md-4 col-lg-4 col-sm-4" onclick="select_value('21')">
+                                    <div class="card-input mb-4 ">
+                                        <!--<div class="panel-heading items selectcard">
+                                     <input type="radio" class="message_pri dashboard-card1 text-white" name='	'  value="21"  id="email_type21" onclick="toneCon('21')" >
+                                       </div>-->
+                                        <div class="card card-select shadow-sm my-0 selectcard" id="selecte_type21">
+                                            <button type="submit" class="btn btn-continue text-capitalize mb-2"
+                                                data-toggle="modal" id="continue_value" data-target="#staticBackdrop1"
+                                                onclick="check_sub_cat_details()">Continue</button>
+                                            <div class="card-body">
+                                                <!--<div class="items">
+                                           <input type="radio" class="message_pri" name='email_type' checked value="21"  id="email_type21" >
+                                           <label for="email_type21">New FREE Ebook/Digital Download</label>
+                                            </div>-->
+                                                <!-- <img src="wl-admin/images/email_type_image/" class="mb-2" width="53" height="53">-->
+
+
+                                                <img src="../assets/images/1649244387engineers.png" class="mb-2"
+                                                    height="60" width="60">
+
+                                                <div class="card-bottom mt-0">
+                                                    <h5 class="email_type" for="email_type21">New FREE Ebook/Digital
+                                                        Download</h5>
+                                                    <p class="card-text text-content ">Post Announcing The Next Big
+                                                        Launch Of A Free
+                                                        Digital Product Or Ebook</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-4" onclick="select_value('22')">
+
+                                    <div class="card-input mb-4 ">
+                                        <!--<div class="panel-heading items selectcard">
+                                     <input type="radio" class="message_pri dashboard-card1 text-white" name='	'  value="22"  id="email_type22" onclick="toneCon('22')" >
+                                       </div>-->
+                                        <div class="card card-select shadow-sm  my-0   " id="selecte_type22">
+                                            <button type="submit" class="btn btn-continue text-capitalize mb-2"
+                                                data-toggle="modal" id="continue_value" data-target="#staticBackdrop1"
+                                                onclick="check_sub_cat_details()">
+                                                Continue
+                                            </button>
+                                            <div class="card-body">
+                                                <!--<div class="items">
+                                           <input type="radio" class="message_pri" name='email_type'  value="22"  id="email_type22" >
+                                           <label for="email_type22">New Retail Product</label>
+                                            </div>-->
+                                                <!-- <img src="wl-admin/images/email_type_image/" class="mb-2" width="53" height="53">-->
+
+
+                                                <img src="../assets/images/1649244270disggh.png" class="mb-2"
+                                                    height="60" width="60">
+
+                                                <div class="card-bottom mt-0">
+                                                    <h5 class="email_type" for="email_type22">New Retail Product</h5>
+                                                    <p class="card-text text-content ">If You Have A New Product That
+                                                        You Want To
+                                                        Introduce To Your Audience</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-4" onclick="select_value('23')">
+
+                                    <div class="card-input mb-4 ">
+                                        <!--<div class="panel-heading items selectcard">
+                                     <input type="radio" class="message_pri dashboard-card1 text-white" name='	'  value="23"  id="email_type23" onclick="toneCon('23')" >
+                                       </div>-->
+                                        <div class="card card-select shadow-sm  my-0   " id="selecte_type23">
+                                            <button type="submit" class="btn btn-continue text-capitalize mb-2"
+                                                data-toggle="modal" id="continue_value" data-target="#staticBackdrop1"
+                                                onclick="check_sub_cat_details()">Continue</button>
+                                            <div class="card-body">
+                                                <!--<div class="items">
+                                           <input type="radio" class="message_pri" name='email_type'  value="23"  id="email_type23" >
+                                           <label for="email_type23">New EBook/Digital Download</label>
+                                            </div>-->
+                                                <!-- <img src="wl-admin/images/email_type_image/" class="mb-2" width="53" height="53">-->
+
+
+                                                <img src="../assets/images/1649244270disggh.png" class="mb-2"
+                                                    height="60" width="60">
+
+                                                <div class="card-bottom mt-0">
+                                                    <h5 class="email_type" for="email_type23">New EBook/Digital Download
+                                                    </h5>
+                                                    <p class="card-text text-content ">Post Announcing The Next Big
+                                                        Launch Of A
+                                                        Digital Product Or Ebook</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div id="message_priAlt">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+   
+
+
+
+
+    <script src="../assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/popper/popper.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/js/custom/script.js"></script>
+    <script>
+
+        function back_to_sub_vategory(x) {
+            document.querySelector("#continue_value").classList.add("disabled");
+            document.querySelector("#continue_value").disabled = true;
+            $('#get_emal_type2').hide();
+            $('#get_emal_type').show();
+            $('#btn_sub_category').hide();
+        }
+        function select_value(x) {
+            $("#selecte_type" + x).addClass("selectcard");
+            var old_value = $("#old_value").val();
+            if (old_value === x) {
+
+            } else {
+                $("#selecte_type" + old_value).removeClass("selectcard");
+            }
+            $("#old_value").val(x);
+
+
+
+            var token = $("#token").val();
+
+            $.ajax({
+                url: "login/emails/sub_category.php",
+                type: "POST",
+                data: { token: token, profileId: x },
+
+
+                success: function (followup) {
+                    //$('#get_emal_type2').show();
+                    //$('#get_emal_type2').html(followup);
+                    //$('#get_emal_type').hide();
+                    //$('#btn_sub_category').show();
+                    document.querySelector("#continue_value").classList.remove("disabled");
+                    document.querySelector("#continue_value").disabled = false;
+
+
+                }
+
+            });
+
+            $.ajax({
+                url: "login/emails/update_type.php",
+                type: "POST",
+                data: { token: token, profileId: x },
+
+
+                success: function (followup) {
+
+
+
+                }
+
+            });
+
+
+
+
+
+
+        }
+
+        function email_type2(x) {
+            var last_type = $('#type2_class').val();
+            $('#selecte_type2' + last_type).removeClass("selectcard");
+            $('#type2_class').val(x);
+            $('#old_value').val(x);
+
+
+            $('#continue_value').removeClass("disabled");
+            toneCon(x);
+
+            $('#selecte_type2' + x).addClass("selectcard");
+            var token = $("#token").val();
+
+            $.ajax({
+                url: "login/emails/update_type.php",
+                type: "POST",
+                data: { token: token, profileId: x },
+
+
+                success: function (followup) {
+
+
+
+                }
+
+            });
+
+            document.querySelector("#continue_value").removeAttribute("disabled");
+
+
+
+        }
+
+
+        function get_types_value(x) {
+            var searh_value = $('#searh_value').val();
+
+
+            $.ajax({
+                url: "login/emails/get_email_type.php",
+                type: "POST",
+                data: {
+                    searh_value: searh_value
+                },
+
+                success: function (followup) {
+
+                    $('#get_emal_type').html(followup);
+                    $('#continue_value').addClass("disabled");
+
+
+                }
+
+            });
+
+        }
+
+        function tone_dec_value(x) {
+            var dfy_tone_if = $('#dfy_tone_if').val();
+            $.ajax({
+                url: "login/emails/get_tone_dfy.php",
+                type: "POST",
+                data: {
+                    dfy_tone_if: dfy_tone_if
+                },
+
+                success: function (followup) {
+
+                    $('#dfy_dec').html(followup);
+                    $('#dfy_decMaian').html(followup);
+
+                }
+
+            });
+
+
+        }
+
+        function chnage_dfy(x) {
+            var dfy = $("#dfy_tone_if").val();
+
+            if (dfy === '#') {
+                $('#tone_alt').html('<font size="3" color="red">Please select tone</font> ');
+                return false;
+            }
+            else {
+                $('#tone_alt').html('');
+
+            }
+            $('#continue_value1').click();
+            $("#cut0").click();
+        }
+        function chnage_dfy1(x) {
+            $('#continue_value').click();
+            $("#cut1").click();
+        }
+
+
+        function check_sub_cat_details() {
+            $('#sub_cat_details').html('');
+            $('#sub_cat_details_section').hide();
+            var sel_email_type_id = $('#old_value').val();
+            $.ajax({
+                type: 'post',
+                url: 'login/emails/get_sub_cat_details.php',
+                data: { sel_email_type_id: sel_email_type_id },
+                success: function (data) {
+                    //console.log(data);
+                    var result = data.trim();
+                    if (result == "no data") {
+
+
+
+                    } else {
+                        $('#sub_cat_details_section').show();
+                        $('#sub_cat_details').html(data);
+
+
+                    }
+
+                }
+            })
+
+        }
+
+    </script>
+</body>
+
+</html>
