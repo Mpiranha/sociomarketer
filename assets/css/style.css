@@ -350,9 +350,9 @@ textarea.form-control{
 .form-control {
     background-color: var(--primary-light-color)!important;
     border: 0!important;
-    height: 2.4rem!important;
+    /* height: 2.4rem!important; */
     border: 1px solid var(--secondary-color)!important;
-    border-radius: 4px!important;
+    /* border-radius: 4px!important; */
 }
 .input-field label {
     top: 0;

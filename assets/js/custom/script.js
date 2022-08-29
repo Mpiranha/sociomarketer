@@ -311,6 +311,91 @@ $(function () {
     });
 
 
+    $("[data-toggle='toggle-content']").each(function () {
+        $($(this).attr("data-target")).css("display", "none");
+        $(this).on("change", function () {
+            if ($(this).get()[0].checked) {
+                $($(this).attr("data-target")).css("display", "block");
+            } else {
+                $($(this).attr("data-target")).css("display", "none");
+            }
+        });
+
+        if ($(this).get()[0].checked) {
+            $($(this).attr("data-target")).css("display", "block");
+        }
+    });
+
+    const REGEXP = /[0-9]/;
+    $('.number-input').each(function () {
+        $(this).on('keypress', function (event) {
+            console.log(event.key);
+            if (!REGEXP.test(event.key)) {
+                event.preventDefault();
+            }
+        });
+    });
+
+
+
+    $('.btn-lock-dimension').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('locked');
+
+        $('.logo-width').toggleClass('fixed-width');
+        $('.logo-height').toggleClass('fixed-height');
+    });
+
+    $('.fixed-width').on('input', function () {
+        $('.fixed-height').val(Math.ceil($(this).val() / 1.5));
+
+    });
+
+    $('.fixed-height').on('input', function () {
+        $('.fixed-width').val(1.5 * $(this).val());
+    });
+
+    $('#emoji-trigger').on('click', function (e) {
+        // e.stopPropagation();
+        // closeAllSelect(this);
+        $('.emoji_tooltip').toggleClass('show');
+        //this.nextSibling.classList.toggle("show");
+        // this.classList.toggle("select-arrow-active");
+    });
+
+    document.querySelector('emoji-picker')
+        .addEventListener('emoji-click', (event) => { $('#composer_text').val($('#composer_text').val() + event.detail.unicode) });
+
+
+    // function closeAllSelect(elmnt) {
+    //     /* A function that will close all select boxes in the document,
+    //     except the current select box: */
+    //     var x, y, i, xl, yl, arrNo = [];
+    //     x = document.getElementsByClassName("emoji_tooltip");
+    //     y = document.getElementsByClassName("ana-select-selected");
+    //     xl = x.length;
+    //     yl = y.length;
+    //     for (i = 0; i < yl; i++) {
+    //         if (elmnt == y[i]) {
+    //             arrNo.push(i)
+    //         } else {
+    //             y[i].classList.remove("select-arrow-active");
+    //         }
+    //     }
+    //     for (i = 0; i < xl; i++) {
+    //         console.log(arrNo.indexOf(i));
+    //         if (arrNo.indexOf(i)) {
+    //             x[i].classList.remove("show");
+    //         }
+    //     }
+    // }
+
+    // /* If the user clicks anywhere outside the select box,
+    // then close all select boxes: */
+    // document.addEventListener("click", closeAllSelect);
+
+
 
 
 

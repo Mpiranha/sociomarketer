@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Campaign</title>
+    <link rel="stylesheet" href="../assets/css/bootstap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/progress.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="../assets/css/main (2).css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css"
+        integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+
+    <div class="flex-col-wrap">
+        <div class="content-head">
+            <div class="content-head-title">
+                <img class="logo" src="../assets/images/Smartpostr.png" alt="logo">
+            </div>
+            <nav class="nav nav-top">
+                <a class="nav-link" href="#">Calendar</a>
+                <a class="nav-link" href="#">My Galery</a>
+                <a class="nav-link" href="#">Compose</a>
+                <a class="nav-link" href="#">My Post</a>
+                <a class="nav-link" href="#">Client Finder</a>
+            </nav>
+            <nav class="nav nav-secondary">
+                <div class="nav-link nav-workspace" href="#">
+                    <div class="workspace-prev">
+                        <img class="workspace-logo" src="../assets/images/tool-test-image.png" alt="Workspace Logo">
+                        <div class="workspace-prev-inner">
+                            <div class="workspace-head-text">
+                                WORKSPACE
+                            </div>
+                            <div class="workspace-details">
+                                Shop and Shop
+                            </div>
+                        </div>
+                        <img class="toggle-icon" src="../assets/images/toggle down.png" alt="toggle down icon">
+                    </div>
+                    <div class="workspace-drop-down">
+                        <div class="workspace-drop-inner">
+                            <div class="custom-search">
+                                <button class="btn no-shadow">
+                                    <img src="../assets/icons/search.svg" alt="">
+                                </button>
+                                <input id="my-input" placeholder="Search" class="form-control no-shadow" type="text"
+                                    name="">
+                            </div>
+
+                            <div class="workspace-list">
+                                <div class="workspace-list-item active">
+                                    <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                    <span class="text">
+                                        Oyibo Market
+                                    </span>
+                                </div>
+                                <div class="workspace-list-item">
+                                    <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                    <span class="text">
+                                        Oyibo Market
+                                    </span>
+                                </div>
+                                <div class="workspace-list-item">
+                                    <img class="ws-icon" src="../assets/images/me.jpeg" alt="">
+                                    <span class="text">
+                                        Oyibo Market
+                                    </span>
+                                </div>
+                            </div>
+                            <nav class="nav workspace-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="../assets/icons/add 2.svg" alt="">
+                                        Add New
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img src="../assets/icons/create campaign.svg" alt="">
+                                        View All
+                                    </a>
+                                </li>
+
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-link" href="#">
+                    <img class="nofification-icon" src="../assets/icons/notification bell.svg" alt="notification bell">
+                </a>
+                <div class="dropdown show">
+                    <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="user-icon" src="../assets/images/tool-test-image.png" alt="User Image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown-menu">
+                        <div class="dropdown-relative-inner">
+                            <a class="dropdown-item" href="#">My Plans</a>
+                            <a class="dropdown-item" href="#">Team Members</a>
+                            <a class="dropdown-item" href="#">Bonus and Resources</a>
+                            <a class="dropdown-item" href="#">Bilings</a>
+                            <a class="dropdown-item" href="#">Tutorial Videos</a>
+                            <a class="dropdown-item" href="#">Profile Settings</a>
+                            <button class="dropdown-item">
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn nav-link btn-logout" href="#">
+                    Help Center
+                </a>
+            </nav>
+        </div>
+        <div class="flex-wrapper">
+            <div class="sidebar">
+                <nav class="nav flex-column nav-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <img class="sidebar-icon" src="../assets/icons/dashboard.svg" alt="">
+                            <span class="nav-text">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pages/create-campaign.html">
+                            <img class="sidebar-icon" src="../assets/icons/create campaign.svg" alt="">
+                            <span class="nav-text">
+                                Create Campaign
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="saved-campaign.html">
+                            <img class="sidebar-icon" src="../assets/icons/view campaign.svg" alt="">
+                            <span class="nav-text">
+                                View Campaigns
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preset.html">
+                            <img class="sidebar-icon" src="../assets/icons/preset.svg" alt="">
+                            <span class="nav-text">
+                                Preset
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" role="button" href="#collapseExample">
+                            <img class="sidebar-icon" src="../assets/icons/media library.svg" alt="">
+                            <span class="nav-text">
+                                Media Library
+                            </span>
+                            <i class="flaticon-up-chevron icons collapse-icon"></i>
+                        </a>
+                    </li>
+                    <li class="collapse" id="collapseExample">
+                        <nav class="nav nav-media flex-column">
+                            <a class="nav-link" href="free-music.html">Free Music</a>
+                            <a class="nav-link" href="stock-image.html">Stock Image</a>
+                            <a class="nav-link" href="text-speech.html">Text To Speech</a>
+                            <a class="nav-link" href="stock-video.html">Stock Video</a>
+                        </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bg-removal.html">
+                            <img class="sidebar-icon" src="../assets/icons/background removal.svg" alt="">
+                            <span class="nav-text">
+                                BG Remover
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">
+                            <img class="sidebar-icon" src="../assets/icons/market.svg" alt="Market Icon">
+                            <span class="nav-text">
+                                Markets
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="integration.html">
+                            <img class="sidebar-icon" src="../assets/icons/intergrations.svg" alt="">
+                            <span class="nav-text">
+                                Integration
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analytics.html">
+                            <img class="sidebar-icon" src="../assets/icons/analytics.svg" alt="">
+                            <span class="nav-text">
+                                Analytics
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="training.html">
+                            <img class="sidebar-icon" src="../assets/icons/training.svg" alt="">
+                            <span class="nav-text">
+                                Training
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="settings.html">
+                            <img class="sidebar-icon" src="../assets/icons/settings.svg" alt="">
+                            <span class="nav-text">
+                                Settings
+                            </span>
+                        </a>
+                    </li>
+
+                </nav>
+
+            </div>
+            <section class="content">
+
+                <div class="content-body">
+                    <div class="container-fluid py-5">
+
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 mx-auto">
+                                <div class="tz-2-main-com tz-2-main border-top shadow">
+                                    <div class="db-list-com tz-db-table pt-0">
+                                        <div class="tz2-form-pay profile-ed ">
+                                            <form class="col s12 mt-0  py-3 px-5"
+                                                action="https://app.smartpostr.com//login/user_login/update_backend.php"
+                                                method="POST" onsubmit="return check_validation()"
+                                                enctype="multipart/form-data">
+                                                <h5 class="py-4 heading-md">Profile Settings</h5>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 mb-5">
+                                                        <div class="circle">
+                                                            <!-- User Profile Image -->
+                                                            <img class="profile-pic rounded-circle"
+                                                                src="../assets/images/me.jpeg" width="120" height="120">
+
+                                                            <!-- Default Image -->
+                                                            <!-- <i class="fa fa-user fa-5x"></i> -->
+                                                            <div class="p-image bg-light p-2 rounded-circle">
+                                                                <i class="fa fa-camera upload-button"></i>
+                                                                <input class="file-upload" type="file" name="file"
+                                                                    accept="image/*">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-5">
+                                                    <div class="col-12 col-lg-6">
+                                                        <div class="logo-toggle-wrap input-shadowed">
+                                                            <img class="smartpostr-logo-prev"
+                                                                src="../assets/images/1649244270disggh.png"
+                                                                alt="logo image">
+
+                                                            <span>Upload Logo to image</span>
+
+                                                            <div class="ml-auto">
+                                                                <label class="switch">
+                                                                    <input data-toggle="toggle-content"
+                                                                        data-target="#logo-setup" type="checkbox">
+                                                                    <span class="slider round"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row px-lg-5" id="logo-setup">
+                                                            <div class="col-12 mb-5">
+                                                                <div class="d-flex settings-uplooad">
+                                                                    <img id="selected-logo"
+                                                                        src="../assets/images/1649244387engineers.png"
+                                                                        alt="play icon">
+                                                                    <div class="upload-texts">
+                                                                        <div class="title">
+                                                                            Upload An Image
+                                                                        </div>
+                                                                        <button class="btn btn-upload-play">
+                                                                            <input type="file" name=""
+                                                                                id="vid-img-upload">
+                                                                            Browse
+                                                                        </button>
+                                                                        <div class="note">
+                                                                            Note: Image Max Size 1mb
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 logo-size-wrap">
+                                                                <div class="mb-3">
+                                                                    <label>Logo Size</label>
+                                                                    <div class="logo-size-inputs">
+                                                                        <input
+                                                                            class="form-control vc-form-input number-input logo-width fixed-width mr-2"
+                                                                            value="" type="text" name="">
+                                                                        <input value=""
+                                                                            class="form-control vc-form-input number-input logo-height fixed-height mr-2"
+                                                                            type="text" name="">
+                                                                        <button
+                                                                            class="btn btn-lock-dimension no-shadow mt-3 locked">
+                                                                            <img class="lock-icon"
+                                                                                src="../assets/images/lock.png"
+                                                                                alt="lock icon">
+                                                                            <img class="unlock-icon"
+                                                                                src="../assets/images/unlock.png"
+                                                                                alt="lock icon">
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="mb-3">
+                                                                    <label>Logo Title</label>
+                                                                    <input class="form-control vc-form-input"
+                                                                        type="text" name=""
+                                                                        placeholder="Enter Logo Title">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label>Logo Position</label>
+
+                                                                    <select class="form-control vc-form-input" name=""
+                                                                        id="vid-logo-pos-input">
+                                                                        <option value="top-left" selected="">Top Left
+                                                                        </option>
+                                                                        <option value="top-right">Top Right</option>
+                                                                        <option value="bottom-right">Bottom Right
+                                                                        </option>
+                                                                        <option value="bottom-left">Bottom Left</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s12 m6 col-lg-6 col-12 form-group">
+                                                        <label class="heading-sm">First Name</label>
+                                                        <input type="text" required="required" name="firstname"
+                                                            id="txtNumeric"
+                                                            class="form-control validate wlanswer-field">
+                                                        <input type="hidden" placeholder="First Name " value="2950"
+                                                            required="" name="id" class="validate">
+                                                        <!--<label>First Name <span class="required">*</span></label>-->
+                                                        <span id="fname_error"></span>
+                                                    </div>
+                                                    <div class="col s12 m6 col-lg-6 col-12 form-group">
+                                                        <label class="heading-sm">Last Name</label>
+                                                        <input type="text" placeholder="Last Name" required="required"
+                                                            name="lastname" id="txtNumeric1"
+                                                            class="form-control validate wlanswer-field">
+                                                        <!--<label>Last Name <span class="required">*</span></label>-->
+                                                        <span id="lname_error"></span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col s12 m6 col-12 form-group">
+                                                        <label class="heading-sm">Email Address</label>
+                                                        <input type="email" placeholder="Email id" value="" readonly=""
+                                                            required="required" id="mail" name="email_address"
+                                                            class="form-control validate wlanswer-field"
+                                                            onblur="myFunction()">
+                                                        <!--	<label>Email id <span class="required">*</span></label>-->
+                                                        <p class="mail_error wl-error-text" style="display:none;">Please
+                                                            Enter
+                                                            valid mail</p>
+                                                        <span id="mail_error"></span>
+                                                        <span class="text-muted" style="font-size: 13px;"><i
+                                                                class="fa fa-info-circle" aria-hidden="true"></i> To
+                                                            update
+                                                            email and phone number, kindly contact us.</span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+
+                                                    <div class="col s12 m6 col-lg-6 col-12 form-group">
+                                                        <label class="heading-sm">Phone Number</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text border">
+                                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                                </div>
+                                                            </div>
+                                                            <input type="text"
+                                                                style="border-radius:0px 4px 4px 0px!important;"
+                                                                class="form-control validate wlanswer-field h-auto"
+                                                                value="7066992597" required="required"
+                                                                name="phone_number" id="phone_number"
+                                                                onkeypress="return isNumberKey(event)" maxlength="11"
+                                                                placeholder="Enter Phone Number *">
+                                                        </div>
+                                                        <span id="phone_number_error"></span>
+                                                    </div>
+
+                                                    <div class="col s12 m6 col-lg-6 col-12 form-group mt-3">
+                                                        <label class="heading-sm">Country</label>
+                                                        <select class="form-control wlanswer-field" name="country_id"
+                                                            required="">
+                                                            <option value="0">Select Country</option>
+                                                            <option value="1">Afghanistan</option>
+                                                            <option value="2">Aring and Islands</option>
+                                                            <option value="3">Albania</option>
+                                                            <option value="4">Algeria</option>
+                                                            <option value="5">American Samoa</option>
+                                                            <option value="6">Andorra</option>
+                                                            <option value="7">Angola</option>
+                                                            <option value="8">Anguilla</option>
+                                                            <option value="9">Antarctica</option>
+                                                            <option value="10">Antigua and Barbuda</option>
+                                                            <option value="11">Argentina</option>
+                                                            <option value="12">Armenia</option>
+                                                            <option value="13">Aruba</option>
+                                                            <option value="14">Australia</option>
+                                                            <option value="15">Austria</option>
+                                                            <option value="16">Azerbaijan</option>
+                                                            <option value="17">Bahamas</option>
+                                                            <option value="18">Bahrain</option>
+                                                            <option value="19">Bangladesh</option>
+                                                            <option value="20">Barbados</option>
+                                                            <option value="21">Belarus</option>
+                                                            <option value="22">Belgium</option>
+                                                            <option value="23">Belize</option>
+                                                            <option value="24">Benin</option>
+                                                            <option value="25">Bermuda</option>
+                                                            <option value="26">Bhutan</option>
+                                                            <option value="27">Bolivia</option>
+                                                            <option value="28">Bosnia and Herzegovina</option>
+                                                            <option value="29">Botswana</option>
+                                                            <option value="30">Bouvet Island</option>
+                                                            <option value="31">Brazil</option>
+                                                            <option value="32">British Indian Ocean territory</option>
+                                                            <option value="33">Brunei Darussalam</option>
+                                                            <option value="34">Bulgaria</option>
+                                                            <option value="35">Burkina Faso</option>
+                                                            <option value="36">Burundi</option>
+                                                            <option value="37">Cambodia</option>
+                                                            <option value="38">Cameroon</option>
+                                                            <option value="39">Canada</option>
+                                                            <option value="40">Cape Verde</option>
+                                                            <option value="41">Cayman Islands</option>
+                                                            <option value="42">Central African Republic</option>
+                                                            <option value="43">Chad</option>
+                                                            <option value="44">Chile</option>
+                                                            <option value="45">China</option>
+                                                            <option value="46">Christmas Island</option>
+                                                            <option value="47">Cocos (Keeling) Islands</option>
+                                                            <option value="48">Colombia</option>
+                                                            <option value="49">Comoros</option>
+                                                            <option value="50">Congo</option>
+                                                            <option value="51">South Sudan</option>
+                                                            <option value="52">Zaire</option>
+                                                            <option value="53">Cook Islands</option>
+                                                            <option value="54">Costa Rica</option>
+                                                            <option value="55">Ivoire (Ivory Coast)</option>
+                                                            <option value="56">Croatia (Hrvatska)</option>
+                                                            <option value="57">Cuba</option>
+                                                            <option value="58">Cyprus</option>
+                                                            <option value="59">Czech Republic</option>
+                                                            <option value="60">Denmark</option>
+                                                            <option value="61">Djibouti</option>
+                                                            <option value="62">Dominica</option>
+                                                            <option value="63">Dominican Republic</option>
+                                                            <option value="64">East Timor</option>
+                                                            <option value="65">Ecuador</option>
+                                                            <option value="66">Egypt</option>
+                                                            <option value="67">El Salvador</option>
+                                                            <option value="68">Equatorial Guinea</option>
+                                                            <option value="69">Eritrea</option>
+                                                            <option value="70">Estonia</option>
+                                                            <option value="71">Ethiopia</option>
+                                                            <option value="72">Falkland Islands</option>
+                                                            <option value="73">Faroe Islands</option>
+                                                            <option value="74">Fiji</option>
+                                                            <option value="75">Finland</option>
+                                                            <option value="76">France</option>
+                                                            <option value="77">French Guiana</option>
+                                                            <option value="78">French Polynesia</option>
+                                                            <option value="79">French Southern Territories</option>
+                                                            <option value="80">Gabon</option>
+                                                            <option value="81">Gambia</option>
+                                                            <option value="82">Georgia</option>
+                                                            <option value="83">Germany</option>
+                                                            <option value="84">Ghana</option>
+                                                            <option value="85">Gibraltar</option>
+                                                            <option value="86">Greece</option>
+                                                            <option value="87">Greenland</option>
+                                                            <option value="88">Grenada</option>
+                                                            <option value="89">Guadeloupe</option>
+                                                            <option value="90">Guam</option>
+                                                            <option value="91">Guatemala</option>
+                                                            <option value="92">Guinea</option>
+                                                            <option value="93">Guinea-Bissau</option>
+                                                            <option value="94">Guyana</option>
+                                                            <option value="95">Haiti</option>
+                                                            <option value="96">Heard and McDonald Islands</option>
+                                                            <option value="97">Honduras</option>
+                                                            <option value="98">Hong Kong</option>
+                                                            <option value="99">Hungary</option>
+                                                            <option value="100">Iceland</option>
+                                                            <option value="101">India</option>
+                                                            <option value="102">Indonesia</option>
+                                                            <option value="103">Iran</option>
+                                                            <option value="104">Iraq</option>
+                                                            <option value="105">Ireland</option>
+                                                            <option value="106">Israel</option>
+                                                            <option value="107">Italy</option>
+                                                            <option value="108">Jamaica</option>
+                                                            <option value="109">Japan</option>
+                                                            <option value="110">Jordan</option>
+                                                            <option value="111">Kazakhstan</option>
+                                                            <option value="112">Kenya</option>
+                                                            <option value="113">Kiribati</option>
+                                                            <option value="114">Korea (north)</option>
+                                                            <option value="115">Korea (south)</option>
+                                                            <option value="116">Kuwait</option>
+                                                            <option value="117">Kyrgyzstan</option>
+                                                            <option value="118">Lao People's Democratic Republic
+                                                            </option>
+                                                            <option value="119">Latvia</option>
+                                                            <option value="120">Lebanon</option>
+                                                            <option value="121">Lesotho</option>
+                                                            <option value="122">Liberia</option>
+                                                            <option value="123">Libyan Arab Jamahiriya</option>
+                                                            <option value="124">Liechtenstein</option>
+                                                            <option value="125">Lithuania</option>
+                                                            <option value="126">Luxembourg</option>
+                                                            <option value="127">Macao</option>
+                                                            <option value="128">Macedonia</option>
+                                                            <option value="129">Madagascar</option>
+                                                            <option value="130">Malawi</option>
+                                                            <option value="131">Malaysia</option>
+                                                            <option value="132">Maldives</option>
+                                                            <option value="133">Mali</option>
+                                                            <option value="134">Malta</option>
+                                                            <option value="135">Marshall Islands</option>
+                                                            <option value="136">Martinique</option>
+                                                            <option value="137">Mauritania</option>
+                                                            <option value="138">Mauritius</option>
+                                                            <option value="139">Mayotte</option>
+                                                            <option value="140">Mexico</option>
+                                                            <option value="141">Micronesia</option>
+                                                            <option value="142">Moldova</option>
+                                                            <option value="143">Monaco</option>
+                                                            <option value="144">Mongolia</option>
+                                                            <option value="145">Montserrat</option>
+                                                            <option value="146">Morocco</option>
+                                                            <option value="147">Mozambique</option>
+                                                            <option value="148">Myanmar</option>
+                                                            <option value="149">Namibia</option>
+                                                            <option value="150">Nauru</option>
+                                                            <option value="151">Nepal</option>
+                                                            <option value="152">Netherlands</option>
+                                                            <option value="153">Netherlands Antilles</option>
+                                                            <option value="154">New Caledonia</option>
+                                                            <option value="155">New Zealand</option>
+                                                            <option value="156">Nicaragua</option>
+                                                            <option value="157">Niger</option>
+                                                            <option value="158" selected="">Nigeria</option>
+                                                            <option value="159">Niue</option>
+                                                            <option value="160">Norfolk Island</option>
+                                                            <option value="161">Northern Mariana Islands</option>
+                                                            <option value="162">Norway</option>
+                                                            <option value="163">Oman</option>
+                                                            <option value="164">Pakistan</option>
+                                                            <option value="165">Palau</option>
+                                                            <option value="166">Palestinian Territories</option>
+                                                            <option value="167">Panama</option>
+                                                            <option value="168">Papua New Guinea</option>
+                                                            <option value="169">Paraguay</option>
+                                                            <option value="170">Peru</option>
+                                                            <option value="171">Philippines</option>
+                                                            <option value="172">Pitcairn</option>
+                                                            <option value="173">Poland</option>
+                                                            <option value="174">Portugal</option>
+                                                            <option value="175">Puerto Rico</option>
+                                                            <option value="176">Qatar</option>
+                                                            <option value="177">Reacute union</option>
+                                                            <option value="178">Romania</option>
+                                                            <option value="179">Russian Federation</option>
+                                                            <option value="180">Rwanda</option>
+                                                            <option value="181">Saint Helena</option>
+                                                            <option value="182">Saint Kitts and Nevis</option>
+                                                            <option value="183">Saint Lucia</option>
+                                                            <option value="184">Saint Pierre and Miquelon</option>
+                                                            <option value="185">Saint Vincent and the Grenadines
+                                                            </option>
+                                                            <option value="186">Samoa</option>
+                                                            <option value="187">San Marino</option>
+                                                            <option value="188">Sao Tome and Principe</option>
+                                                            <option value="189">Saudi Arabia</option>
+                                                            <option value="190">Senegal</option>
+                                                            <option value="191">Serbia and Montenegro</option>
+                                                            <option value="192">Seychelles</option>
+                                                            <option value="193">Sierra Leone</option>
+                                                            <option value="194">Singapore</option>
+                                                            <option value="195">Slovakia</option>
+                                                            <option value="196">Slovenia</option>
+                                                            <option value="197">Solomon Islands</option>
+                                                            <option value="198">Somalia</option>
+                                                            <option value="199">South Africa</option>
+                                                            <option value="200">South Georgia and the South Sandwich
+                                                                Islands
+                                                            </option>
+                                                            <option value="201">Spain</option>
+                                                            <option value="202">Sri Lanka</option>
+                                                            <option value="203">Sudan</option>
+                                                            <option value="204">Suriname</option>
+                                                            <option value="205">Svalbard and Jan Mayen Islands</option>
+                                                            <option value="206">Swaziland</option>
+                                                            <option value="207">Sweden</option>
+                                                            <option value="208">Switzerland</option>
+                                                            <option value="209">Syria</option>
+                                                            <option value="210">Taiwan</option>
+                                                            <option value="211">Tajikistan</option>
+                                                            <option value="212">Tanzania</option>
+                                                            <option value="213">Thailand</option>
+                                                            <option value="214">Togo</option>
+                                                            <option value="215">Tokelau</option>
+                                                            <option value="216">Tonga</option>
+                                                            <option value="217">Trinidad and Tobago</option>
+                                                            <option value="218">Tunisia</option>
+                                                            <option value="219">Turkey</option>
+                                                            <option value="220">Turkmenistan</option>
+                                                            <option value="221">Turks and Caicos Islands</option>
+                                                            <option value="222">Tuvalu</option>
+                                                            <option value="223">Uganda</option>
+                                                            <option value="224">Ukraine</option>
+                                                            <option value="225">United Arab Emirates</option>
+                                                            <option value="226">United Kingdom</option>
+                                                            <option value="227">United States of America</option>
+                                                            <option value="228">Uruguay</option>
+                                                            <option value="229">Uzbekistan</option>
+                                                            <option value="230">Vanuatu</option>
+                                                            <option value="231">Vatican City(Holy See)</option>
+                                                            <option value="232">Venezuela</option>
+                                                            <option value="233">Vietnam</option>
+                                                            <option value="234">Virgin Islands (British)</option>
+                                                            <option value="235">Virgin Islands (US)</option>
+                                                            <option value="236">Wallis and Futuna Islands</option>
+                                                            <option value="237">Western Sahara</option>
+                                                            <option value="238">Yemen</option>
+                                                            <option value="239">Congo Democratic Republic</option>
+                                                            <option value="240">Zambia</option>
+                                                            <option value="241">Zimbabwe</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col s12 m6 col-lg-6 col-12 form-group">
+                                                        <label for="password" class="heading-sm">Password</label>
+                                                        <input id="password" name="password" type="password"
+                                                            placeholder="Password" class="form-control wlanswer-field">
+                                                        <span id="password_error"></span>
+                                                        <p class="text-muted mt-2" style=" font-size: 12px;">Note:
+                                                            Password must
+                                                            be atleast 6 characters long. <br>
+                                                            Password should contain at least 1 alphabet and 1 number.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col s12 m6 col-lg-6 col-12 form-group">
+                                                        <label for="confirm-password" class="heading-sm">Confirm
+                                                            Password</label>
+                                                        <input id="confirm-password" name="confirm_password"
+                                                            type="password" placeholder="Confirm Password"
+                                                            class="form-control validate wlanswer-field">
+                                                        <span id="password_error"></span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="input-field col text-center s12">
+                                                        <input type="submit" value="Update Profile"
+                                                            class="waves-effect waves-light btn btn-primary">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!--	<div class="db-mak-pay-bot">
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p> <button  type='submit' name='submit' class="waves-effect waves-light btn-large">Profile Update</button> </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="../assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/popper/popper.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/js/custom/script.js"></script>
+
+</body>
+
+</html>
