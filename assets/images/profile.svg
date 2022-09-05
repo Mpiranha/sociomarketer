@@ -1,0 +1,7 @@
+<svg id="profile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="person">
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="24" height="24" fill="#fff" opacity="0"/>
+    <path id="Path_4" data-name="Path 4" d="M11.968,10.936A3.968,3.968,0,1,0,8,6.968,3.968,3.968,0,0,0,11.968,10.936Zm0-5.952A1.984,1.984,0,1,1,9.984,6.968,1.984,1.984,0,0,1,11.968,4.984Z" transform="translate(-0.064 -0.024)" fill="#fff"/>
+    <path id="Path_5" data-name="Path 5" d="M11.944,13A6.944,6.944,0,0,0,5,19.944a.992.992,0,0,0,1.984,0,4.96,4.96,0,0,1,9.92,0,.992.992,0,0,0,1.984,0A6.944,6.944,0,0,0,11.944,13Z" transform="translate(-0.04 -0.105)" fill="#fff"/>
+  </g>
+</svg>

@@ -2473,6 +2473,10 @@ svg {
     margin-bottom: 1rem;
 }
 
+.plan-has-no-content img{
+    width: 40%;
+}
+
 .billing-has-no-content .text {
     color: #a34eff;
     font-size: 1.5rem;
@@ -3627,6 +3631,8 @@ tbody tr td:nth-child(1) {
 .social-stats {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .social-stats .stat-item {
@@ -3635,9 +3641,9 @@ tbody tr td:nth-child(1) {
     align-items: center;
 }
 
-.social-stats .stat-item:nth-child(1) {
+/* .social-stats .stat-item:nth-child(1) {
     margin-right: 1.5rem;
-}
+} */
 
 .social-stats .stat-item .value {
     font-size: 1.8rem;
