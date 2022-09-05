@@ -1361,17 +1361,17 @@ html {
     color: #fff;
     font-size: 0.8rem;
 }
-
+/* 
 svg {
     height: 25px !important;
     width: 25px !important;
     position: absolute;
-}
+} */
 
-path {
+/* path {
     stroke: #007db5;
     fill: #fff;
-}
+} */
 
 .pagination-bottom .page-item.active .page-link {
     background-color: #66329e;
@@ -3065,6 +3065,34 @@ input:checked+.slider:before {
 
 .ana-select-selected {
     background-color: DodgerBlue;
+    display: flex;
+    background-color: #fff;
+    border: 2px solid #a34eff;
+    padding: 0.5rem 0.4rem !important;
+    border-radius: 0.6rem;
+    min-width: 221px;
+}
+
+.ana-select-selected .total-values {
+    color: #fff;
+    background-color: #66329e;
+    font-size: 1.1rem;
+    padding: 0rem 0.5rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    margin-right: 0.7rem;
+}
+
+.ana-select-selected span {
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+    margin-right: 0.7rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.ana-select-selected .dropdown-icon {
+    width: 1.2rem;
 }
 
 /* Style the arrow inside the select element: */
@@ -3088,23 +3116,47 @@ input:checked+.slider:before {
 } */
 
 /* style the items (options), including the selected item: */
-.ana-select-items div,
+.ana-select-items-inner .soc-act-item,
 .ana-select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    color: #66329e;
+    /* padding: 8px 16px; */
+    /* border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
     cursor: pointer;
+}
+
+.soc-act-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.7rem 0;
 }
 
 /* Style items (options): */
 .ana-select-items {
     position: absolute;
-    background-color: DodgerBlue;
-    top: 100%;
+    top: 120%;
     left: 0;
     right: 0;
     z-index: 99;
+}
+
+.ana-select-items .ana-select-items-inner {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: 2px 3px 6px #9d9595;
+    padding: 1rem 0.5rem 3rem 0.5rem;
+    border: 1px solid #d5b9f4;
+    border-radius: 0.2rem;
+}
+
+.ana-select-items .ana-select-items-inner::before {
+    position: absolute;
+    content: "";
+    border: 7px solid transparent;
+    border-color: transparent transparent #757373 transparent;
+    right: 11px;
+    top: -14px;
 }
 
 /* Hide the items when the select box is closed: */
@@ -3112,9 +3164,30 @@ input:checked+.slider:before {
     display: none;
 }
 
-.ana-select-items div:hover,
+.ana-select-items-inner .soc-act-item:hover,
 .ana-same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.soc-act-prev {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.soc-act-prev .soc-icon {
+    position: absolute;
+    bottom: -2px;
+    right: -3px;
+    width: 1rem;
+}
+
+.soc-act-prev .soc-profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 .reseller-stat {
@@ -3312,7 +3385,7 @@ select.input-card-details {
 }
 
 .serach-form-custom input {
-    padding: 1.5rem 1.9rem;
+    padding: 0.7rem 1.9rem;
     border-radius: 0.4rem !important;
     font-size: 1rem;
     margin-top: 0;
@@ -3342,13 +3415,303 @@ select.input-card-details {
     transform: rotateZ(45deg);
 }
 
-.emoji_tooltip {
+#date-picker {
+    background-color: #66329e;
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.5rem 0.65rem 2.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.datepicker-outter {
+    position: relative;
+    min-width: 300px;
+}
+
+.datepicker-outter #date-picker {
+    width: 100%;
+}
+
+.datepicker-outter .cal-icon {
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: 50%;
+    margin-top: -11px;
+    left: 9px;
+}
+
+
+.datepicker-outter .dropdown-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    right: 9px;
+    width: 1.3rem;
+}
+
+.table-condensed thead tr:nth-child(2) {
+    background-color: #dddddd;
+}
+
+.table-condensed thead tr th {
+    border-radius: 0 !important;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: transparent !important;
+    color: #000 !important;
+    border: 2px solid #efaf4c !important;
+    display: inline-block;
+    border-radius: 50% !important;
+}
+
+.daterangepicker.show-calendar .ranges {
+    background-color: #66329e;
+    margin-top: 0 !important;
+}
+
+.daterangepicker .ranges li {
+    color: #fff;
+    padding: 11.3px 12px !important;
+}
+
+.daterangepicker .ranges li.active {
+    background-color: #fff !important;
+    color: #66329e !important;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+    height: 30px !important;
+}
+
+.btn-apply-date {
+    background-color: #66329e;
+    color: #fff;
+}
+
+thead tr th:nth-child(1),
+tbody tr td:nth-child(1) {
+    color: #ff0000 !important;
+}
+
+.right-section .action-btn {
+    color: #66329e;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: 2px solid #efaf4c;
+    min-width: 130px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.action-btn .dropdown-icon {
+    width: 1.2rem;
+    margin-left: auto;
+}
+
+.dropdown-export .dropdown-relative-inner::before,
+.filter-dropdown .dropdown-relative-inner::before {
     display: none;
 }
 
+.dropdown-export .dropdown-menu {
+    min-width: 12rem;
+    box-shadow: 2px 3px 6px #9d9595;
+    top: 0.8rem !important;
+}
+
+.dropdown-export .dropdown-item {
+    color: #66329e;
+    font-weight: 500;
+}
+
+.dropdown-export .dropdown-relative-inner::after,
+.filter-dropdown .dropdown-relative-inner::after {
+    top: -30px;
+}
+
+.filter-dropdown .dropdown-menu {
+    min-width: 350px;
+    width: 100%;
+    box-shadow: 2px 3px 6px #9d9595;
+}
+
+.arrow-left::after {
+    left: 19px;
+    right: initial;
+}
+
+.filter-dropdown .title {
+    color: #66329e;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 2px solid #66329e;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-dropdown .btn-upgrade {
+    background-color: #fff;
+    color: #efaf4c;
+    border: 2px solid #efaf4c;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-dropdown label {
+    color: #66329e;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.filter-dropdown select {
+    font-size: 1.1rem;
+}
+
+.tb-post-wrap {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+}
+
+.tb-post-wrap .post-img {
+    width: 65px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+
+
+.table-analytics tr td {
+    color: #000;
+}
+
+.text-purple {
+    color: #a450ff !important;
+}
+
+.social-type-card {
+    background-color: #fff;
+    box-shadow: -1px 2px 5px 0.2rem rgb(0 0 0 / 9%);
+    border-radius: 0.5rem;
+    height: 300px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-type-card .header {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-type-card .social-icon {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.social-type-card .social-type-body {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-stats .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-stats .stat-item:nth-child(1) {
+    margin-right: 1.5rem;
+}
+
+.social-stats .stat-item .value {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+
+.social-stats .stat-item .value-desc {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+.social-engagement-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.social-engagement-item .text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.social-engagement-item .value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.2rem 1rem;
+    color: #fff;
+    border-radius: 0.3rem;
+}
+
+.social-engagement-item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.facebook-card .social-stats .stat-item .value-desc,
+.facebook-card .social-engagement-item .value {
+    background-color: #3a559f;
+}
+
+.twitter-card .social-stats .stat-item .value-desc,
+.twitter-card .social-engagement-item .value {
+    background-color: #55acee;
+}
+
+.instagram-card .social-stats .stat-item .value-desc,
+.instagram-card .social-engagement-item .value {
+    background-color: #c31c98;
+}
+
+.linkedin-card .social-stats .stat-item .value-desc,
+.linkedin-card .social-engagement-item .value {
+    background-color: #007ab9;
+}
+
+.chart-card {
+    box-shadow: -1px 2px 5px 0.2rem rgb(0 0 0 / 9%);
+    border-radius: 0.5rem;
+    height: 300px;
+    padding: 1rem;
+}
+
+
+
+
+#chartdiv {
+    width: 100%;
+    height: 280px;
+}
 
 @media (min-width: 1250px) {
     .form-opt-in {
