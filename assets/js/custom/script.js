@@ -366,10 +366,13 @@ $(function () {
 
 
 
-    document.querySelector('emoji-picker')
-        .addEventListener('emoji-click', (event) => { $('#composer_text').val($('#composer_text').val() + event.detail.unicode); });
+    let emoji_picker = document.querySelector('emoji-picker');
+    emoji_picker.addEventListener('emoji-click', (event) => {
+        //$('#composer_text').val($('#composer_text').val() + event.detail.unicode);
+        $('#composer_text').val($('#composer_text').val().slice(0, $('#composer_text').prop("selectionStart")) + event.detail.unicode + $('#composer_text').val().slice($('#composer_text').prop("selectionStart")));
+    });
 
-  
+
     // function closeAllSelect(elmnt) {
     //     /* A function that will close all select boxes in the document,
     //     except the current select box: */
