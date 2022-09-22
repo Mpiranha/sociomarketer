@@ -370,6 +370,7 @@ $(function () {
     emoji_picker.addEventListener('emoji-click', (event) => {
         //$('#composer_text').val($('#composer_text').val() + event.detail.unicode);
         $('#composer_text').val($('#composer_text').val().slice(0, $('#composer_text').prop("selectionStart")) + event.detail.unicode + $('#composer_text').val().slice($('#composer_text').prop("selectionStart")));
+        
     });
 
 

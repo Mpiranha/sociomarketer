@@ -3719,6 +3719,36 @@ tbody tr td:nth-child(1) {
     height: 280px;
 }
 
+.plan-upgrade-box {
+    box-shadow: -1px 2px 5px 0.2rem rgb(0 0 0 / 9%);
+    padding: 2rem 1.8rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.plan-upgrade-box .card-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.plan-upgrade-box .card-desc {
+    font-size: 0.8rem;
+}
+
+.plan-upgrade-box .btn-upgrade-plan {
+    background-color: #8f69b8;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.4rem 1.5rem;
+    border-radius: 1rem;
+}
+
+
+
 @media (min-width: 1250px) {
     .form-opt-in {
         padding-left: 5rem !important;
