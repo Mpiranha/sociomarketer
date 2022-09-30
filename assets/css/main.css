@@ -3755,7 +3755,7 @@ tbody tr td:nth-child(1) {
     color: #fff;
     font-size: 1.2rem;
     padding: 0.4rem 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     transition: all 0.5s linear;
 }
 
@@ -3781,7 +3781,7 @@ tbody tr td:nth-child(1) {
     background-color: #8f69b8;
     color: #fff;
     font-size: 1.2rem;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     padding: 0.35rem 1.2rem;
 }
 
