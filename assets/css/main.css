@@ -3410,7 +3410,7 @@ select.input-card-details {
 .custom_post_link {
     background-color: var(--color-primary);
     color: #fff;
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem 0.9rem;
     border-radius: 0.6rem;
     transition: all 0.5s;
     border: 1px solid #efaf4c;
