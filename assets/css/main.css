@@ -3779,7 +3779,7 @@ tbody tr td:nth-child(1) {
 
 .active-plan {
     background-color: #8f69b8;
-    color: red;
+    color: #fff;
     font-size: 1.2rem;
     border-radius: 1rem;
     padding: 0.35rem 1.2rem;
