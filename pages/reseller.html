@@ -62,7 +62,7 @@
 
                         <div class="row">
                             <div class="col-4">
-                                <div class="reseller-stat">
+                                <div class="reseller-stat mb-4">
                                     <div class="reseller-stat-item">
                                         <div class="stat-title">
                                             Reseller type
@@ -88,6 +88,10 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <button class="btn btn-block btn-access-resel">
+                                    Access Reseller Resources
+                                </button>
                             </div>
                             <div class="col-8">
                                 <div class="reseller-header">
@@ -98,6 +102,17 @@
                                     <div class="header-item">
                                         <img class="icon" src="../assets/images/link-alt.png" alt="">
                                         Web hook
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div class="form-search">
+
+                                            <div class="custom-search">
+                                                <button class="btn no-shadow">
+                                                    <img src="../assets/icons/search.png" alt="">
+                                                </button>
+                                                <input id="my-input" class="form-control no-shadow" type="text" name="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -173,33 +188,39 @@
 
                     <form action="#" method="post">
                         <div class="form-group">
-                            <label for="">First Name</label>
+                            <label for="">First Name (required)</label>
                             <input type="text" name="" id="" class="form-control input-shadowed input-card-details"
                                 placeholder="First Name">
                         </div>
                         <div class="form-group mb-4">
-                            <label for="">Last Name</label>
+                            <label for="">Last Name (required)</label>
                             <input type="text" name="" id="" class="form-control input-shadowed input-card-details"
                                 placeholder="Last Name">
                         </div>
 
                         <div class="form-group mb-4">
-                            <label for="">Email</label>
+                            <label for="">Email (required)</label>
                             <input type="email" name="" id="" class="form-control input-shadowed input-card-details"
                                 placeholder="Email">
                         </div>
 
                         <div class="form-group mb-4">
-                            <label for="">Password</label>
+                            <label for="">Password (required)</label>
                             <input type="text" name="" id="" class="form-control input-shadowed input-card-details"
                                 placeholder="Password">
                         </div>
 
                         <div class="form-group">
-                            <label for="">Access</label>
+                            <label for="">Access (required)</label>
                             <select class="form-control input-shadowed input-card-details" name="" id="">
                                 <option value="none" selected>Select Plans</option>
                             </select>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="">Amount in USD (required)</label>
+                            <input type="number" name="" id="" class="form-control input-shadowed input-card-details"
+                                placeholder="Amount">
                         </div>
 
 

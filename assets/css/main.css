@@ -3758,6 +3758,20 @@ tbody tr td:nth-child(1) {
     border-radius: 1rem;
 }
 
+.btn-access-resel {
+    color: red;
+    border: 1px solid red;
+    background-color: #fff;
+    box-shadow: 1px 2px 7px #7a7474bd;
+    transition: all 0.5s;
+}
+
+.btn-access-resel:hover {
+    color: #fff;
+    border: 1px solid red;
+    background-color: red;
+}
+
 
 
 @media (min-width: 1250px) {
