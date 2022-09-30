@@ -3755,7 +3755,13 @@ tbody tr td:nth-child(1) {
     color: #fff;
     font-size: 1.2rem;
     padding: 0.4rem 1.5rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    transition: all 0.5s linear;
+}
+
+.plan-upgrade-box .btn-upgrade-plan:hover {
+    background-color: var(--color-primary);
+
 }
 
 .btn-access-resel {
@@ -3770,6 +3776,14 @@ tbody tr td:nth-child(1) {
     color: #fff;
     border: 1px solid red;
     background-color: red;
+}
+
+.active-plan {
+    border: 2px solid #000;
+    color: red;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    padding: 0.35rem 1.2rem;
 }
 
 
