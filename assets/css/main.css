@@ -3375,7 +3375,7 @@ select.input-card-details {
     right: 5px;
     background-color: var(--color-primary);
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.25rem 1.1rem;
     display: none;
 }
