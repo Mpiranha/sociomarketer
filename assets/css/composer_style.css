@@ -2046,7 +2046,7 @@ ul{
 .btn-primary-composer {
 	background-color: #66329e;
 	color: #fff;
-	padding: 0.45rem 1.05rem;
+	padding: 0.25rem 1.05rem;
 	border: 1px solid #efaf4c;
 	border-radius: 0.4rem;
 }
@@ -2082,7 +2082,7 @@ select {
 
 .btn-add-media-link {
 	background-color: #66329e;
-	padding: 0.6rem 1rem !important;
+	padding: 0.4rem 0.7rem !important;
 	border: 1px solid #efaf4c;
 	border-radius: 0.4rem !important;
 }
