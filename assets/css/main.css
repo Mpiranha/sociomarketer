@@ -3761,6 +3761,7 @@ tbody tr td:nth-child(1) {
 
 .plan-upgrade-box .btn-upgrade-plan:hover {
     background-color: var(--color-primary);
+    color: #EEAF4C;
 }
 
 .btn-access-resel {
