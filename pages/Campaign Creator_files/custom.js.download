@@ -1,0 +1,414 @@
+$(document).ready(function() {
+    "use strict";
+
+    //LEFT MOBILE MENU OPEN
+    $(".ts-menu-5").on('click', function() {
+        $(".mob-right-nav").css('right', '0px');
+    });
+
+    //LEFT MOBILE MENU OPEN
+    $(".mob-right-nav-close").on('click', function() {
+        $(".mob-right-nav").css('right', '-270px');
+    });
+
+    //LEFT MOBILE MENU CLOSE
+    $(".mob-close").on('click', function() {
+        $(".mob-close").hide("fast");
+        $(".menu").css('left', '-92px');
+        $(".mob-menu").show("slow");
+    });
+
+    //mega menu
+    $(".t-bb").hover(function() {
+        $(".cat-menu").fadeIn(50);
+    });
+    $(".ts-menu").mouseleave(function() {
+        $(".cat-menu").fadeOut(50);
+    });
+
+    //mega menu
+    $(".sea-drop").on('click', function() {
+        $(".sea-drop-1").fadeIn(100);
+    });
+    $(".sea-drop-1").mouseleave(function() {
+        $(".sea-drop-1").fadeOut(50);
+    });
+    $(".dir-ho-t-sp").mouseleave(function() {
+        $(".sea-drop-1").fadeOut(50);
+    });
+
+    //mega menu top menu
+    $(".sea-drop-top").on('click', function() {
+        $(".sea-drop-2").fadeIn(100);
+    });
+    $(".sea-drop-1").mouseleave(function() {
+        $(".sea-drop-2").fadeOut(50);
+    });
+    $(".top-search").mouseleave(function() {
+        $(".sea-drop-2").fadeOut(50);
+    });
+
+    //ADMIN LEFT MOBILE MENU OPEN
+    $(".atab-menu").on('click', function() {
+        $(".sb2-1").css("left", "0");
+        $(".btn-close-menu").css("display", "inline-block");
+    });
+
+    //ADMIN LEFT MOBILE MENU CLOSE
+    $(".btn-close-menu").on('click', function() {
+        $(".sb2-1").css("left", "-350px");
+        $(".btn-close-menu").css("display", "none");
+    });
+
+    //mega menu
+    $(".t-bb").hover(function() {
+        $(".cat-menu").fadeIn(50);
+    });
+    $(".ts-menu").mouseleave(function() {
+        $(".cat-menu").fadeOut(50);
+    });
+    //review replay
+    $(".edit-replay").on('click', function() {
+        $(".hide-box").show();
+    });
+
+    //PRE LOADING
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+    $('body').delay(350).css({
+        'overflow': 'visible'
+    });
+
+    $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrainWidth: 400, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+        stopPropagation: false // Stops event propagation
+    });
+    $('.dropdown-button2').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: ($('.dropdown-content').width() * 3) / 2.5 + 5, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    });
+
+    //Collapsible
+    //$('.collapsible').collapsible();
+
+    //material select
+    //$('select').material_select();
+	
+    //AUTO COMPLETE CITY SELECT
+   
+
+	//AUTO COMPLETE SEARCH SELECT
+   
+	
+    //AUTO COMPLETE CITY SELECT
+   
+
+	//AUTO COMPLETE SEARCH SELECT
+   	
+
+    //HOME PAGE FIXED MENU
+    $(window).scroll(function() {
+
+        if ($(this).scrollTop() > 450) {
+            $('.hom-top-menu').fadeIn();
+            $('.cat-menu').hide();
+        } else {
+            $('.hom-top-menu').fadeOut();
+        }
+    });
+});
+
+function scrollNav() {
+    $('.v3-list-ql-inn a').click(function() {
+        //Toggle Class
+        $(".active-list").removeClass("active-list");
+        $(this).closest('li').addClass("active-list");
+        var theClass = $(this).attr("class");
+        $('.' + theClass).parent('li').addClass('active-list');
+        //Animate
+        $('html, body').stop().animate({
+            scrollTop: $($(this).attr('href')).offset().top - 130
+        }, 400);
+        return false;
+    });
+    $('.scrollTop a').scrollTop();
+}
+scrollNav();
+
+var namePattern=/[^a-z|^A-Z|^\s]/;
+
+function check_valid(id,error)
+{
+    var fnam = $('#'+id).val();
+    var error_msg = id+error;
+    
+    if(fnam!=='')
+    {
+        if (fnam.replace(/^\s+|\s+$/g, "").length === 0) 
+        { 
+           $('#'+error_msg).html('<span class="text-danger">Please Enter Value. </span>');
+           $('#'+id).addClass('validate invalid');
+            return;
+        }
+        else if (fnam.replace(/^\s+|\s+$/g, "").length <= 2) 
+        { 
+            $('#'+error_msg).html('<span class="text-danger">Name should be minimum 3 characters in length. </span>');
+            $('#'+id).addClass('validate invalid');
+            return;
+        }
+        else if(fnam.match(namePattern))
+        {
+            $('#'+error_msg).html('<span class="text-danger">Please Enter Valid name. </span>');
+            $('#'+id).addClass('validate invalid');
+            return;
+        }
+        else 
+        { 
+            $('#'+error_msg).html(''); 
+        }
+    }
+    else
+    {
+         $('#'+error_msg).html(''); 
+    }
+}
+function check_contact(id,error)
+{
+    var contact_number = $('#'+id).val();
+    var error_msg = id+error;
+    
+    if(contact_number!=='')
+    {
+        if (contact_number.replace(/^\s+|\s+$/g, "").length === 0) 
+        { 
+            $('#'+error_msg).html('<span class="text-danger">Please Enter Number. </span>');
+            $('#'+contact_number).addClass('validate invalid');
+            //return; 
+            cnt++;
+        }  
+        else if(!contact_number.match(/^[2-9]\d+$/))
+        {
+            $('#'+error_msg).html('<span class="text-danger">Please Enter Valid Number. </span>');
+            $('#'+contact_number).addClass('validate invalid');
+            //return;
+            cnt++;
+        }
+        else 
+        { 
+            $('#'+error_msg).html(''); 
+        }
+    }
+    else
+    {
+        $('#'+error_msg).html(''); 
+    }
+    
+}
+function check_contact_dupl(id,error)
+{
+    var contact_number = $('#'+id).val();
+    var error_msg = id+error;
+    
+    if(contact_number!=='')
+    {
+        if (contact_number.replace(/^\s+|\s+$/g, "").length === 0) 
+        { 
+            $('#'+error_msg).html('<span class="text-danger">Please Enter Number. </span>');
+            $('#'+contact_number).addClass('validate invalid');
+            //return; 
+            cnt++;
+        }  
+        else if(!contact_number.match(/^[2-9]\d+$/))
+        {
+            $('#'+error_msg).html('<span class="text-danger">Please Enter Valid Number. </span>');
+            $('#'+contact_number).addClass('validate invalid');
+            //return;
+            cnt++;
+        }
+        else 
+        { 
+            $('#'+error_msg).html('');
+            $.ajax({
+                url: "backend_files/email_phone_vef.php",
+                type: "POST",
+                data: { number: contact_number},                       
+                success: function(followup)
+                {     
+                    if(followup=='already')
+                    {
+                        $('#contact_numberAlt').html('<span class="text-danger">This Number already exists. please choose a different one.</span>');
+                        $('#contact_number').addClass('validate invalid');	
+                        $("#contact_numberAlt").show().delay(15000).fadeOut();
+                        $('#contact_dupl').val('1');
+                        cnt++;
+                    }	
+                    else
+                    {
+                        $('#contact_dupl').val('0');
+                    }
+                }
+            });
+        }
+    }
+    else
+    {
+        $('#'+error_msg).html(''); 
+    }
+    
+}
+function check_mail(id,error)
+{
+    var mail = $('#'+id).val();
+    var error_msg = id+error;
+    
+    if(mail!=='')
+    {
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if(mail.replace(/^\s+|\s+$/g, "").length === 0)
+        {
+            document.getElementById("mail_id").focus();
+            $('#'+mail).addClass('validate invalid');
+            $('#'+error_msg).show().html('Please Enter E-mail').delay( 3000 ).hide( 0 );
+            $('#'+error_msg).addClass('text-danger');
+            return false;
+        }
+        else if (reg.test(mail) === false) 
+        {
+            $('#'+error_msg).show().html('Invalid E-mail');
+            $('#'+error_msg).addClass('text-danger');
+            return false;
+        }
+        else
+        {
+            $('#'+error_msg).html('');
+            $('#'+error_msg).removeClass('text-danger');
+        }
+    }
+}
+function check_mail_dupl(id,error)
+{
+    var mail = $('#'+id).val();
+    var error_msg = id+error;
+    
+    if(mail!=='')
+    {
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if(mail.replace(/^\s+|\s+$/g, "").length === 0)
+        {
+            document.getElementById("mail_id").focus();
+            $('#'+mail).addClass('validate invalid');
+            $('#'+error_msg).show().html('Please Enter E-mail').delay( 3000 ).hide( 0 );
+            $('#'+error_msg).addClass('text-danger');
+            return false;
+        }
+        else if (reg.test(mail) === false) 
+        {
+            $('#'+error_msg).show().html('Invalid E-mail');
+            $('#'+error_msg).addClass('text-danger');
+            return false;
+        }
+        else
+        {
+            $('#'+error_msg).html('');
+            $('#'+error_msg).removeClass('text-danger');
+            $.ajax({
+                url: "backend_files/email_phone_vef.php",
+                type: "POST",
+                data: { email: mail},                       
+                success: function(followup)
+                {     
+                    if(followup=='already')
+                    {
+                        $('#mailAlt').html('<span class="text-danger">This email already exists. please choose a different one.</span>'); 
+                        $('#mail').addClass('validate invalid');
+                        $("#mailAlt").show().delay(15000).fadeOut();
+                        $('#mail_dupl').val('1');
+                    }							
+                    else
+                    {
+                        $('#mail_dupl').val('0');
+                    }
+                }
+            });
+        }
+    }
+}
+function confirm_pass()
+{
+    var password =$('#password').val();
+	var con_password = $('#con_password').val();
+	if(password!=con_password)
+	{
+	    $('#conpasswordAlt').html('<span class="text-danger">Both Passwords didn\'t match. </span>');
+	    return;
+	}
+	else
+	{
+	    if(con_password!=='')
+	    {
+	        $('#conpasswordAlt').html('');
+	    }
+	}
+}
+function isNumberKey(evt)
+{
+ var charCode = (evt.which) ? evt.which : evt.keyCode;
+ if (charCode != 46 && charCode > 31 
+   && (charCode < 48 || charCode > 57))
+    return false;
+
+ return true;
+}
+$('#password').blur(function(){
+    var pass = $('#password').val();
+    if(pass!='')
+    {
+        if(pass.length<=5)
+        {
+            $('#passwordAlt').html('<span class="text-danger">Minimum 6 characters required.</span>');
+			$('#password').addClass('validate invalid');
+		}
+		else if(pass.match(/[a-zA-Z]/) && pass.match(/[0-9]/))
+        {
+            $('#password').removeClass('validate invalid');
+            $('#passwordAlt').html('');
+        }
+        else
+        {
+            $('#password').addClass('validate invalid');  
+            $('#passwordAlt').html('<span class="text-danger">Password should contain at least 1 alphabet and 1 number.</span>');
+        }
+    }
+});
+$(function() {
+    $('#password').keypress(function(e) {
+        // Detect current character & shift key
+        var character = e.keyCode ? e.keyCode : e.which;
+        var sftKey = e.shiftKey ? e.shiftKey : ((character == 16) ? true : false);
+        // Is caps lock on?
+        isCapsLock = (((character >= 65 && character <= 90) && !sftKey) || ((character >= 97 && character <= 122) && sftKey));
+        // Display warning and set css
+        if (isCapsLock == true) {
+            var parent = $(this).parent();
+            $(this).addClass('capslock');
+            $('.capslockMessage').remove();
+            $('#passwordAlt').html('<span class="text-danger"><i class="fa fa-info-circle" aria-hidden="true"></i> Capslock is on.</span>');
+        }
+        else
+        {
+            $(this).removeClass('capslock');
+            $('#passwordAlt').html('');
+        }
+    });
+});
