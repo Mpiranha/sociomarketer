@@ -3911,8 +3911,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .btn-trigger-upload {
     background-color: var(--color-primary);
     color: #fff;
-    padding: 0.2rem 1rem;
-    border-radius: 1rem;
+    padding: 0.2rem 1.5rem;
+    border-radius: 0.5rem;
 }
 
 
@@ -3931,9 +3931,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     position: absolute;
     top: 10px;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     padding: 0 1rem;
+    display: none;
+}
+
+.gallery__item:hover .gallery__action {
+    display: flex;
 }
 
 .gallery__action-hover {
