@@ -2479,11 +2479,11 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem 3rem 3rem 3rem;
 }
 
 .billing-has-no-content img {
-    width: 48.9%;
+    width: 40%;
     margin-bottom: 1rem;
 }
 
