@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99" height="19" viewBox="0 0 99 19">
+  <g id="delete_red" data-name="delete red" transform="translate(-953 -457)">
+    <rect id="Rectangle_31" data-name="Rectangle 31" width="99" height="19" rx="2" transform="translate(953 457)" fill="#ff7272"/>
+    <g id="Group_14" data-name="Group 14">
+      <text id="Delete" transform="translate(987 469)" fill="#fff" font-size="10" font-family="Metropolis-Regular, Metropolis"><tspan x="0" y="0">Delete</tspan></text>
+      <g id="trash" transform="translate(974 461)">
+        <path id="Path_95" data-name="Path 95" d="M10.708,1.833H9.288A2.3,2.3,0,0,0,7.042,0H6.125A2.3,2.3,0,0,0,3.879,1.833H2.458a.458.458,0,1,0,0,.917h.458V8.708A2.294,2.294,0,0,0,5.208,11h2.75A2.294,2.294,0,0,0,10.25,8.708V2.75h.458a.458.458,0,1,0,0-.917ZM6.125.917h.917a1.378,1.378,0,0,1,1.3.917H4.828a1.378,1.378,0,0,1,1.3-.917ZM9.333,8.708a1.375,1.375,0,0,1-1.375,1.375H5.208A1.375,1.375,0,0,1,3.833,8.708V2.75h5.5Z" fill="#fff"/>
+        <path id="Path_96" data-name="Path 96" d="M9.458,13.667a.458.458,0,0,0,.458-.458v-2.75a.458.458,0,0,0-.917,0v2.75A.458.458,0,0,0,9.458,13.667Z" transform="translate(-3.792 -5.417)" fill="#fff"/>
+        <path id="Path_97" data-name="Path 97" d="M13.458,13.667a.458.458,0,0,0,.458-.458v-2.75a.458.458,0,1,0-.917,0v2.75A.458.458,0,0,0,13.458,13.667Z" transform="translate(-5.958 -5.417)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
