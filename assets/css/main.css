@@ -4166,7 +4166,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background-color: #fff !important;
     border: 1px solid var(--color-primary) !important;
     color: var(--color-primary) !important;
-    border-radius: 0.8rem;
+    border-radius: 1rem !important;
 }
 
 .modal-cus-width {
@@ -4188,6 +4188,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     border: 2px solid var(--secondary-color) !important;
 } 
 
+.keyword-input {
+    width: 130px;
+}
+
+
+.hashtag-input {
+    width: 57px;
+}
 @media (min-width: 1250px) {
     .form-opt-in {
         padding-left: 5rem !important;
