@@ -4149,15 +4149,25 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .hashtag-gen-tooltip {
-    width: 300px;
+    width: 600px;
     position: absolute;
-    right: 0;
+    right: 50%;
     top: 110%;
     display: none;
-    background-color: #fff;
-    border: 1px solid var(--secondary-color)!important;
-    padding: 0.5rem 0.8rem;
+    background-color: #f1b7ff;
+    border-radius: 1rem;
+    padding: 1rem 0.8rem;
     z-index: 999998;
+    min-height: 200px;
+    margin-right: -300px;
+    box-shadow: -1px 3px 7px #a59c9c;
+}
+
+.hashtag-gen-tooltip .form-control {
+    background-color: #fff !important;
+    border: 1px solid var(--color-primary) !important;
+    color: var(--color-primary) !important;
+    border-radius: 0.8rem;
 }
 
 .modal-cus-width {
@@ -4168,6 +4178,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     width: 100%;
     height: auto;
     margin-bottom: -5px;
+}
+
+.btn-gen-hashtag {
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 1rem;
 }
 
 .border-secondary {
