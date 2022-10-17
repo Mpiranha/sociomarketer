@@ -4156,9 +4156,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     display: none;
     background-color: #f1b7ff;
     border-radius: 1rem;
-    padding: 1rem 0.8rem;
+    padding: 1.5rem 0.8rem;
     z-index: 999998;
-    min-height: 200px;
     margin-right: -300px;
     box-shadow: -1px 3px 7px #a59c9c;
 }
