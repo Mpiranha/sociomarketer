@@ -235,9 +235,10 @@ a:hover {
     background: #fff!important;
     border-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
-    border-radius: 25px !important;
-    font-size: 12px;
-    font-weight: 500;
+    border-radius: 0.3rem !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .3rem 1.3rem!important;
 }
 .btn-outline-primary:hover{
      color: var(--primary-color);
@@ -350,7 +351,7 @@ textarea.form-control{
 .form-control {
     background-color: var(--primary-light-color)!important;
     border: 0!important;
-    /* height: 2.4rem!important; */
+    height: 2.4rem!important;
     border: 1px solid var(--secondary-color)!important;
     /* border-radius: 4px!important; */
 }
@@ -5770,10 +5771,11 @@ textarea, .cpn-pag-form input {
     background: var(--primary-color)!important;
     color: var(--white-color)!important;
     border-radius: 4px;
-    font-size: 12px!important;
-    padding: .54rem 1.3rem!important;
+    font-size: 16px!important;
+    padding: .3rem 1.3rem!important;
     line-height: 1.4!important;
     font-weight: 500;
+    border-radius: 0.3rem;
     border: 1px solid var(--secondary-color)!important;
 }
 .btn-sm-primary{
@@ -6575,10 +6577,10 @@ img {
 }
 .scrollbar{
 	    /* float: left; */
-    height: 500px;
-    background: transparent;
-    overflow-y: auto;
-    margin-bottom: 25px;
+	    height: 500px;
+	    background: transparent;
+	    overflow-y: auto;
+	    /* margin-bottom: 25px; */
 }
 .scroll-fb{
     height: 340px!important;
@@ -6587,7 +6589,7 @@ img {
 	min-height: 520px!important;
 }
 .force-overflow{
-	min-height: 300px!important;
+	min-height: 550px!important;
 }
 /*
  *  STYLE 4
@@ -6693,7 +6695,7 @@ img {
     text-indent:none!important;
 }
 .captions{
-    margin: 0 15px;
+    margin: 0 15px 20px 15px;
 }
 .captions p{
     font-size: 13px;
@@ -6855,8 +6857,8 @@ div#pills-tabContent {
 }
 
 .left-icon, .right-icon{
-    font-size: 40px !important;
-    color: var(--primary-color);
+    font-size: 20px !important;
+    color: #fff;
     margin: 0 10px;
 }
 .left-icon:hover, .right-icon:hover , .left-icon:active, .right-icon:active{

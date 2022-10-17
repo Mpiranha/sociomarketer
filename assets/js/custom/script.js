@@ -364,16 +364,54 @@ $(function () {
         // this.classList.toggle("select-arrow-active");
     });
 
+    $('#hashtag-trigger').on('click', function (e) {
+        // e.stopPropagation();
+        // closeAllSelect(this);
+        $('.hashtag-gen-tooltip').toggleClass('show');
+        //this.nextSibling.classList.toggle("show");
+        // this.classList.toggle("select-arrow-active");
+    });
+
 
 
     let emoji_picker = document.querySelector('emoji-picker');
     emoji_picker.addEventListener('emoji-click', (event) => {
         //$('#composer_text').val($('#composer_text').val() + event.detail.unicode);
-        $('#composer_text').val($('#composer_text').val().slice(0, $('#composer_text').prop("selectionStart")) + event.detail.unicode + $('#composer_text').val().slice($('#composer_text').prop("selectionStart")));
+        if ($('#composer_text').length > 0) {
+            $('#composer_text').val($('#composer_text').val().slice(0, $('#composer_text').prop("selectionStart")) + event.detail.unicode + $('#composer_text').val().slice($('#composer_text').prop("selectionStart")));
+        }
+
         
+        if ($('#edit_post_content').length > 0) {
+            $('#edit_post_content').val($('#edit_post_content').val().slice(0, $('#edit_post_content').prop("selectionStart")) + event.detail.unicode + $('#edit_post_content').val().slice($('#edit_post_content').prop("selectionStart")));
+        }
     });
 
-    
+    document.addEventListener('mouseup', function (e) {
+
+        var container = $(".close-click-outside");
+  
+  
+        if (container.hasClass('show')) {
+          // if the target of the click isn't the container nor a descendant of the container
+          if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.removeClass('show');
+            
+          }
+        }
+  
+        // if (container.hasClass('show')) {
+        //   if ($('.btn-drop').has(e.target).length > 0 || $('.btn-drop').is(e.target)) {
+        //     return;
+        //   }
+        //   if (!$('.user-drop').is(e.target) && $('.user-drop').has(e.target).length === 0) {
+        //     //container.removeClass('show-visible');
+        //     $vm.isShowing = false;
+        //   }
+        // }
+      });
+
+
 
 
     // function closeAllSelect(elmnt) {

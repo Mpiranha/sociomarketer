@@ -1901,8 +1901,8 @@ ul{
 
 /*madal windows*/
 	.modal{
-  		background-color: #0d172ce6;
-	}
+  		/* background-color: #0d172ce6; */
+ }
 	#modalPostsFirst .modal-lg,
 	#modalPostsSecond .modal-lg,
 	#modalcustomizePosts .modal-lg{
