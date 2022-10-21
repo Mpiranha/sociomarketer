@@ -723,6 +723,7 @@ html {
 
 .recent-campaign-wrap {
     padding: 1rem 1.2rem;
+    height: calc(100vh - 522px);
 }
 
 .recent-campaign-wrap .title {
@@ -761,7 +762,7 @@ html {
 }
 
 .video-wrap {
-    height: 263px;
+    height: calc(100vh - 522px);
     padding: 2rem;
 }
 
