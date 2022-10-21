@@ -1,8 +1,1 @@
-<svg id="billing" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-  <g id="credit-card">
-    <rect id="Rectangle_8" data-name="Rectangle 8" width="17" height="17" fill="#fff" opacity="0"/>
-    <path id="Path_6" data-name="Path 6" d="M13.967,5H4.112A2.112,2.112,0,0,0,2,7.112v5.632a2.112,2.112,0,0,0,2.112,2.112h9.855a2.112,2.112,0,0,0,2.112-2.112V7.112A2.112,2.112,0,0,0,13.967,5ZM3.408,7.112a.7.7,0,0,1,.7-.7h9.855a.7.7,0,0,1,.7.7v.7H3.408Zm11.263,5.632a.7.7,0,0,1-.7.7H4.112a.7.7,0,0,1-.7-.7V9.224H14.671Z" transform="translate(-0.592 -1.48)" fill="#fff"/>
-    <path id="Path_7" data-name="Path 7" d="M6.7,14.408H9.52A.7.7,0,0,0,9.52,13H6.7a.7.7,0,1,0,0,1.408Z" transform="translate(-1.776 -3.849)" fill="#fff"/>
-    <path id="Path_8" data-name="Path 8" d="M14.7,14.408h1.408a.7.7,0,0,0,0-1.408H14.7a.7.7,0,0,0,0,1.408Z" transform="translate(-4.145 -3.849)" fill="#fff"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="billing" width="17" height="17" viewBox="0 0 17 17"><g id="credit-card"><rect id="Rectangle_8" width="17" height="17" fill="#fff" data-name="Rectangle 8" opacity="0"/><path id="Path_6" fill="#fff" d="M13.967,5H4.112A2.112,2.112,0,0,0,2,7.112v5.632a2.112,2.112,0,0,0,2.112,2.112h9.855a2.112,2.112,0,0,0,2.112-2.112V7.112A2.112,2.112,0,0,0,13.967,5ZM3.408,7.112a.7.7,0,0,1,.7-.7h9.855a.7.7,0,0,1,.7.7v.7H3.408Zm11.263,5.632a.7.7,0,0,1-.7.7H4.112a.7.7,0,0,1-.7-.7V9.224H14.671Z" data-name="Path 6" transform="translate(-0.592 -1.48)"/><path id="Path_7" fill="#fff" d="M6.7,14.408H9.52A.7.7,0,0,0,9.52,13H6.7a.7.7,0,1,0,0,1.408Z" data-name="Path 7" transform="translate(-1.776 -3.849)"/><path id="Path_8" fill="#fff" d="M14.7,14.408h1.408a.7.7,0,0,0,0-1.408H14.7a.7.7,0,0,0,0,1.408Z" data-name="Path 8" transform="translate(-4.145 -3.849)"/></g></svg>

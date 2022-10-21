@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="location" transform="translate(-1197 -443)">
-    <g id="Group_2234" data-name="Group 2234">
-      <g id="Rectangle_1932" data-name="Rectangle 1932" transform="translate(1197 443)" fill="none" stroke="#efaf4c" stroke-width="2">
-        <rect width="30" height="30" rx="10" stroke="none"/>
-        <rect x="1" y="1" width="28" height="28" rx="9" fill="none"/>
-      </g>
-    </g>
-    <path id="location_2" d="M104,224a7.008,7.008,0,0,0-7,7c0,6.282,6,8.755,6.257,8.857a2,2,0,0,0,1.486,0C105,239.755,111,237.282,111,231a7.008,7.008,0,0,0-7-7Zm0,14s-5-2-5-7a5,5,0,0,1,10,0C109,236,104,238,104,238Zm0-10a3,3,0,1,0,3,3A3,3,0,0,0,104,228Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,104,232Z" transform="translate(1108 226)" fill="#66329e" fill-rule="evenodd"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="location" transform="translate(-1197 -443)"><g id="Group_2234" data-name="Group 2234"><g id="Rectangle_1932" fill="none" stroke="#efaf4c" stroke-width="2" data-name="Rectangle 1932" transform="translate(1197 443)"><rect width="30" height="30" stroke="none" rx="10"/><rect width="28" height="28" x="1" y="1" fill="none" rx="9"/></g></g><path id="location_2" fill="#66329e" fill-rule="evenodd" d="M104,224a7.008,7.008,0,0,0-7,7c0,6.282,6,8.755,6.257,8.857a2,2,0,0,0,1.486,0C105,239.755,111,237.282,111,231a7.008,7.008,0,0,0-7-7Zm0,14s-5-2-5-7a5,5,0,0,1,10,0C109,236,104,238,104,238Zm0-10a3,3,0,1,0,3,3A3,3,0,0,0,104,228Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,104,232Z" transform="translate(1108 226)"/></g></svg>

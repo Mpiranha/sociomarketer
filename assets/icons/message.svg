@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="message" transform="translate(-1486 -443)">
-    <path id="message_1_dots" d="M325,488a1,1,0,1,0-1-1A1,1,0,0,0,325,488Zm3,0a1,1,0,1,0-1-1A1,1,0,0,0,328,488Zm3,0a1,1,0,1,0-1-1A1,1,0,0,0,331,488Zm3-8H322a2,2,0,0,0-2,2v12a2,2,0,0,0,3.109,1.664l2.5-1.664H334a2,2,0,0,0,2-2V482A2,2,0,0,0,334,480Zm0,12h-9l-3,2V482h12Z" transform="translate(1173 -30)" fill="#66329e" fill-rule="evenodd"/>
-    <g id="Rectangle_1924" data-name="Rectangle 1924" transform="translate(1486 443)" fill="none" stroke="#efaf4c" stroke-width="2">
-      <rect width="30" height="30" rx="10" stroke="none"/>
-      <rect x="1" y="1" width="28" height="28" rx="9" fill="none"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="message" transform="translate(-1486 -443)"><path id="message_1_dots" fill="#66329e" fill-rule="evenodd" d="M325,488a1,1,0,1,0-1-1A1,1,0,0,0,325,488Zm3,0a1,1,0,1,0-1-1A1,1,0,0,0,328,488Zm3,0a1,1,0,1,0-1-1A1,1,0,0,0,331,488Zm3-8H322a2,2,0,0,0-2,2v12a2,2,0,0,0,3.109,1.664l2.5-1.664H334a2,2,0,0,0,2-2V482A2,2,0,0,0,334,480Zm0,12h-9l-3,2V482h12Z" transform="translate(1173 -30)"/><g id="Rectangle_1924" fill="none" stroke="#efaf4c" stroke-width="2" data-name="Rectangle 1924" transform="translate(1486 443)"><rect width="30" height="30" stroke="none" rx="10"/><rect width="28" height="28" x="1" y="1" fill="none" rx="9"/></g></g></svg>
