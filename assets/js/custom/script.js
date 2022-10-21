@@ -372,6 +372,19 @@ $(function () {
         // this.classList.toggle("select-arrow-active");
     });
 
+    $('.btn-play-pause-campaign').on('click', function() {
+        if($(this).attr('state') == 'playing') {
+            $(this).attr('state', 'pause');
+            $(this).children('img').attr('src', '../assets/icons/pause.png'); 
+        } else if ($(this).attr('state') == 'pause') {
+            $(this).attr('state', 'stop');
+            $(this).children('img').attr('src', '../assets/icons/stop.png');
+        } else {
+            $(this).attr('state', 'playing');
+            $(this).children('img').attr('src', '../assets/icons/play.png');
+        }
+    });
+
 
 
     let emoji_picker = document.querySelector('emoji-picker');

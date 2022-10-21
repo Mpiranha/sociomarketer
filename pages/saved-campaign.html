@@ -277,13 +277,16 @@
                                 <thead>
                                     <tr>
                                         <th>
-                                            <div class="th-custom">
+                                            <div class="th-custom text-dark">
                                                 ID
                                                 <!-- <button>
                                                     <img class="sort-icon" src="../assets/icons/arrows_down_up.svg"
                                                         alt="">
                                                 </button> -->
                                             </div>
+                                        </th>
+                                        <th>
+
                                         </th>
                                         <th>
                                             <div class="th-custom">
@@ -303,15 +306,15 @@
                                                 </button> -->
                                             </div>
                                         </th>
-                                        <th>
+                                        <!-- <th>
                                             <div class="th-custom">
                                                 Accounts
-                                                <!-- <button>
+                                                <button>
                                                     <img class="sort-icon" src="../assets/icons/arrows_down_up.svg"
                                                         alt="">
-                                                </button> -->
+                                                </button>
                                             </div>
-                                        </th>
+                                        </th> -->
                                         <th>
                                             <div class="th-custom">
                                                 Channels
@@ -353,9 +356,14 @@
                                 <tbody>
                                     <tr>
                                         <td class="text-dark" scope="row">1</td>
+                                        <td>
+                                            <button type="button" state="playing" class="btn no-shadow btn-play-pause-campaign">
+                                                <img src="../assets/icons/play.png" alt="play pause icon">
+                                            </button>
+                                        </td>
                                         <td>Clifford </td>
                                         <td>Moscow Town</td>
-                                        <td>
+                                        <!-- <td>
                                             <div class="account-prev">
                                                 <img src="../assets/images/avatar 1.png" alt="account icon">
                                                 <img src="../assets/images/me.jpeg" alt="account icon">
@@ -363,7 +371,7 @@
                                                 <img src="../assets/images/me-2.jpeg" alt="account icon">
                                                 <img src="../assets/images/avatar 2.png" alt="account icon">
                                             </div>
-                                        </td>
+                                        </td> -->
                                         <td>
                                             <div class="channel-prev">
                                                 <img src="../assets/images/facebook (2).png" alt="channel icon">
@@ -381,11 +389,12 @@
                                                     aria-expanded="false">
                                                     <img src="../assets/images/dots.png" alt="Actions Icon">
                                                 </button>
-                                                <div class="dropdown-menu dropdown-menu-right">
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-style">
                                                     <a class="dropdown-item" href="#">Rename</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item" href="#">Clone</a>
-                                                    <a data-toggle="modal" data-target="#modal-share" class="dropdown-item" href="#">Share</a>
+                                                    <a data-toggle="modal" data-target="#modal-share"
+                                                        class="dropdown-item" href="#">Share</a>
                                                     <a class="dropdown-item" href="#">Download</a>
                                                     <a class="dropdown-item" href="#">Delete</a>
                                                 </div>
