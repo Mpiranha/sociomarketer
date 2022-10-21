@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-  <path id="intergrations" d="M76.5,227.125a9.375,9.375,0,1,1-9.375,9.375,9.375,9.375,0,0,1,9.375-9.375m0-3.125A12.5,12.5,0,1,0,89,236.5,12.5,12.5,0,0,0,76.5,224Zm-1.562,14.063L70.25,236.5l10.938-4.687L76.5,242.75Z" transform="translate(-64 -224)" fill="#efaf4c" fill-rule="evenodd"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path id="intergrations" fill="#efaf4c" fill-rule="evenodd" d="M76.5,227.125a9.375,9.375,0,1,1-9.375,9.375,9.375,9.375,0,0,1,9.375-9.375m0-3.125A12.5,12.5,0,1,0,89,236.5,12.5,12.5,0,0,0,76.5,224Zm-1.562,14.063L70.25,236.5l10.938-4.687L76.5,242.75Z" transform="translate(-64 -224)"/></svg>

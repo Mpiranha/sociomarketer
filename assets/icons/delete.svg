@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="delete" transform="translate(-1547 -443)">
-    <path id="delete_2" d="M79,547H75v-1a2,2,0,0,0-2-2H71a2,2,0,0,0-2,2v1H65a1,1,0,0,0,0,2h1v9a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-9h1a1,1,0,0,0,0-2Zm-8-1h2v1H71Zm5,12H68v-9h8Z" transform="translate(1490 -94)" fill="#dc3545" fill-rule="evenodd"/>
-    <g id="Rectangle_1923" data-name="Rectangle 1923" transform="translate(1547 443)" fill="none" stroke="#dc3545" stroke-width="2">
-      <rect width="30" height="30" rx="10" stroke="none"/>
-      <rect x="1" y="1" width="28" height="28" rx="9" fill="none"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="delete" transform="translate(-1547 -443)"><path id="delete_2" fill="#dc3545" fill-rule="evenodd" d="M79,547H75v-1a2,2,0,0,0-2-2H71a2,2,0,0,0-2,2v1H65a1,1,0,0,0,0,2h1v9a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2v-9h1a1,1,0,0,0,0-2Zm-8-1h2v1H71Zm5,12H68v-9h8Z" transform="translate(1490 -94)"/><g id="Rectangle_1923" fill="none" stroke="#dc3545" stroke-width="2" data-name="Rectangle 1923" transform="translate(1547 443)"><rect width="30" height="30" stroke="none" rx="10"/><rect width="28" height="28" x="1" y="1" fill="none" rx="9"/></g></g></svg>
