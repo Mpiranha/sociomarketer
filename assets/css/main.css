@@ -719,11 +719,11 @@ html {
 .video-wrap {
     border: 2px solid #f3c278;
     border-radius: 1rem;
+    height: 400px;
 }
 
 .recent-campaign-wrap {
     padding: 1rem 1.2rem;
-    height: 500px;
 }
 
 .recent-campaign-wrap .title {
@@ -762,7 +762,6 @@ html {
 }
 
 .video-wrap {
-    height: 500px;
     padding: 2rem;
 }
 
