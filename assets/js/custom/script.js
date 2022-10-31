@@ -459,6 +459,132 @@ $(function () {
     // }
   });
 
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "7e201497damsh01c6d650b66f4e8p1c8f68jsn2e304499e58f",
+      "X-RapidAPI-Host": "hashtagy-generate-hashtags.p.rapidapi.com",
+    },
+  };
+
+  $("#keyword-hashtag").on("input", function () {
+    if ($(this).val().length > 1) {
+      $(".btn-gen-hashtag").removeAttr("disabled");
+    } else {
+      $(".btn-gen-hashtag").attr("disabled", "true");
+    }
+  });
+
+  $(".btn-gen-hashtag").on("click", function () {
+    $("#result").text('');
+    $(".btn-gen-hashtag").attr("disabled", "true");
+    $(".btn-gen-hashtag").attr("data-state", "loading");
+    let keyword = $("#keyword-hashtag").val().toLowerCase();
+    let filter = $(".filter-keyword-input").val().toLowerCase();
+    let length = $(".hashtag-input").val();
+    let url =
+      filter != "none"
+        ? "https://hashtagy-generate-hashtags.p.rapidapi.com/v1/comprehensive/tags?keyword=" +
+          keyword +
+          "&filter=" +
+          filter
+        : "https://hashtagy-generate-hashtags.p.rapidapi.com/v1/comprehensive/tags?keyword=" +
+          keyword;
+
+    fetch(url, options)
+      .then((response) => response.json())
+      .then((response) => {
+        if (response.data) {
+          $(".btn-gen-hashtag").removeAttr("disabled");
+          $(".btn-gen-hashtag").attr("data-state", "done");
+          if (length > response.data.best_30_hashtags.hashtags.length) {
+            length = response.data.best_30_hashtags.hashtags.length;
+          }
+
+          for (let i = 0; i < length; i++) {
+            $("#result").append(
+              "<li> #" + response.data.best_30_hashtags.hashtags[i] + "</li>"
+            );
+          }
+
+          $("#result").append("<li>Add all</li>");
+
+          $("#result li:not(:last-child)").each(function () {
+            $(this).on("click", function () {
+              if ($("#composer_text").length > 0) {
+                $("#composer_text").val(
+                  $("#composer_text")
+                    .val()
+                    .slice(0, $("#composer_text").prop("selectionStart")) +
+                    $(this).text() +
+                    " " +
+                    $("#composer_text")
+                      .val()
+                      .slice($("#composer_text").prop("selectionStart"))
+                );
+              }
+            });
+          });
+
+          $("#result li:last-child").on("click", function () {
+            $("#result li:not(:last-child)").each(function (index, value) {
+              if ($("#composer_text").length > 0) {
+                $("#composer_text").val(
+                  $("#composer_text")
+                    .val()
+                    .slice(0, $("#composer_text").prop("selectionStart")) +
+                    $(this).text().toLowerCase() +
+                    " " +
+                    $("#composer_text")
+                      .val()
+                      .slice($("#composer_text").prop("selectionStart"))
+                );
+              }
+            });
+          });
+
+          $("#result li:not(:last-child)").each(function () {
+            $(this).on("click", function () {
+              if ($("#edit_post_content").length > 0) {
+                $("#edit_post_content").val(
+                  $("#edit_post_content")
+                    .val()
+                    .slice(0, $("#edit_post_content").prop("selectionStart")) +
+                    $(this).text() +
+                    " " +
+                    $("#edit_post_content")
+                      .val()
+                      .slice($("#edit_post_content").prop("selectionStart"))
+                );
+              }
+            });
+          });
+
+          $("#result li:last-child").on("click", function () {
+            $("#result li:not(:last-child)").each(function (index, value) {
+              if ($("#edit_post_content").length > 0) {
+                $("#edit_post_content").val(
+                  $("#edit_post_content")
+                    .val()
+                    .slice(0, $("#edit_post_content").prop("selectionStart")) +
+                    $(this).text().toLowerCase() +
+                    " " +
+                    $("#edit_post_content")
+                      .val()
+                      .slice($("#edit_post_content").prop("selectionStart"))
+                );
+              }
+            });
+          });
+        } else {
+          $(".btn-gen-hashtag").removeAttr("disabled");
+          $(".btn-gen-hashtag").attr("data-state", "done");
+          $("#result").text('No Hashtag Found');
+        }
+      })
+      .catch((err) => console.error(err));
+  });
+
   // function closeAllSelect(elmnt) {
   //     /* A function that will close all select boxes in the document,
   //     except the current select box: */

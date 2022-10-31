@@ -4149,14 +4149,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .hashtag-gen-tooltip {
-    width: 525px;
+    width: 680px;
     position: absolute;
     right: 50%;
     top: 110%;
     display: none;
     background-color: #f1b7ff;
     border-radius: 1rem;
-    padding: 1.5rem 0.8rem;
+    padding: 1.5rem 0.8rem 0.5rem 0.8rem;
     z-index: 999998;
     margin-right: -300px;
     box-shadow: -1px 3px 7px #a59c9c;
@@ -4167,6 +4167,21 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     border: 1px solid var(--color-primary) !important;
     color: var(--color-primary) !important;
     border-radius: 1rem !important;
+}
+
+#result li {
+    color: var(--color-primary);
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#result li:last-child {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0.35rem 0.7rem;
 }
 
 .modal-cus-width {
@@ -4184,17 +4199,34 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     border-radius: 1rem;
 }
 
+.btn-gen-hashtag img {
+    width: 1.3rem;
+    display: none;
+}
+
+[data-state="loading"] img {
+    display: inline-block;
+}
+
+[data-state="loading"] span {
+    display: none;
+}
+
 .border-secondary {
     border: 2px solid var(--secondary-color) !important;
 } 
 
 .keyword-input {
-    width: 110px;
+    width: 120px;
 }
 
 
+.filter-keyword-input {
+    width: 120px;
+}
+
 .hashtag-input {
-    width: 57px;
+    width: 55px;
 }
 
 .btn-play-pause-campaign {
