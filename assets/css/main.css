@@ -4248,6 +4248,48 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     top: 20px;
 }
 
+.campaign-status {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 2px solid #9b9191;
+    animation: rotate 0.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        border-top-width: 2px;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        border-left-width: 0;
+    }
+    25% {
+        border-top-width: 0;
+        border-right-width: 2px;
+        border-bottom-width: 0;
+        border-left-width: 0;
+    }
+    50% {
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 2px;
+        border-left-width: 0;
+    }
+    75% {
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        border-left-width: 2px;
+    }
+    100% {
+        border-top-width: 2px;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        border-left-width: 0;
+    }    
+}
+
 @media (min-width: 1250px) {
     .form-opt-in {
         padding-left: 5rem !important;
